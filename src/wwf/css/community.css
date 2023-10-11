@@ -1,0 +1,103 @@
+#main {
+    margin-top: -10px;
+}
+
+#community-main {
+    display: flex;
+}
+
+#board-grid {
+    width: 150px;
+    height: 400px;
+}
+
+.board-grid {
+    text-align: center;
+    border: 2px solid black;
+    margin: 40px 5px -30px 5px;
+    height: 150px;
+    padding-bottom: 15px;
+}
+
+#posts-grid {
+    width: calc(100% - 150px);
+    min-height: 650px;
+}
+
+li {
+    margin-right: 100px;
+}
+
+.board-grid-option:hover {
+    background-color: yellow;
+}
+
+#search-input-grid {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input-grid label {
+    display: flex;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+}
+
+/* 指定输入框的放大样式 */
+input[type="text"]:focus {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+#posts-info-grid {
+    /*display: flex;*/
+    justify-content: center;
+    margin: 20px 5px -5px 5px;
+    padding-top: 5px;
+}
+
+.post-info {
+    border-radius: 20px;
+    background-color: rgb(114, 153, 179);
+    padding: 10px;
+    margin: 10px;
+}
+
+.post-info-text {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 30px);
+}
+
+.post-info-image {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 30px);
+}
+
+.post-info-functional {
+    display: flex;
+    justify-content: center;
+}
+
+.post-info-functional-option {
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px 5px 0 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+.post-info-functional-option-icon {
+    width: 20px;
+    height: 20px;
+}
+

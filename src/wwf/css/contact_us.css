@@ -1,0 +1,27 @@
+.chatwith {
+    font-family: 'Young Serif', serif;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    border-color: #b3cbb9;
+    margin-top: -10px;
+}
+
+.container {
+    display: flex;
+    min-height: 250px;
+    justify-content: center;
+    margin: 30px
+}
+
+.contact-option-grid {
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid slategray;
+    padding: 20px;
+    margin: 15px;
+}
+
+.pic {
+    padding-bottom: 10px;
+}

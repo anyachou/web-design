@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find Friends</title>
+	<link rel="stylesheet" href="css/general_style.css">
+	<link rel="stylesheet" href="css/find_friends.css">
+</head>
+<body>
+	<iframe src="component/header.html" class="header"></iframe>
+	<div>
+		<div class="poster-area">
+			<img class="area" src="./images/friends/brisbane-header-2.jpg" alt="">
+		</div>
+		<div class="dropmenu_grid">
+			<div class="selector">
+				<div class="lang-menu">
+					<label>
+						<select>
+							<option>English</option>
+							<option>Arabic</option>
+							<option>German</option>
+							<option>Japanese</option>
+							<option>Mandarin</option>
+						</select>
+					</label>
+				</div>
+				<div class="loc-menu">
+					<label>
+						<select>
+							<option>London</option>
+							<option>Toronto</option>
+							<option>Hamberg</option>
+							<option>Brisbane</option>
+							<option>Sydney</option>
+						</select>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div id="infos-grid">
+			<div class="info-grid">
+				<div class="info-personal info-detail-col">
+					<img src="images/icon/man.png" alt="" class="info-personal-image"/>
+					<div class="info-personal-lang">
+						<label>SPEAKS</label>
+						<div class="info-personal-lang-detail">
+							<div class="info-personal-lang-country">
+								<img src="images/country/united-states-america_323310.png" alt="" class="info-personal-lang-country-image" />
+								<label>English</label>
+							</div>
+							<div class="info-personal-lang-country">
+								<img src="images/country/japan_323308.png" alt="" class="info-personal-lang-country-image" />
+								<label>Japanese</label>
+							</div>
+						</div>
+					</div>
+					<div class="info-personal-lang">
+						<label>LEARNS</label>
+						<div class="info-personal-lang-detail">
+							<div class="info-personal-lang-country">
+								<img src="images/country/united-states-america_323310.png" alt="" class="info-personal-lang-country-image" />
+								<label>English</label>
+							</div>
+							<div class="info-personal-lang-country">
+								<img src="images/country/taiwan_5922010.png" alt="" class="info-personal-lang-country-image" />
+								<label>Taiwanese</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-personal-detail info-detail-col">
+					<div class="info-personal-detail-name-and-location">
+						<label class="info-personal-detail-name">Jason</label>
+						<img src="images/icon/pin_484167.png" alt="" class="icon"/>
+						<label>Brisbane</label>
+					</div>
+					<h4>Communities</h4>
+					<div class="info-personal-detail-community">
+						<img src="./images/community/Wine.jpg" alt="" class="community-image"/>
+						<img src="./images/community/tennis.jpg" alt="" class="community-image"/>
+                        <img src="./images/community/baking.webp" alt="" class="community-image"/>
+					</div>
+					<h5>My language partner is</h5>
+					<label>
+						<input type="text" class="info-personal-detail-lang-partner" />
+					</label>
+					<h5>My learn goal is</h5>
+					<label>
+						<input type="text" class="info-personal-detail-learn-goal" />
+					</label>
+				</div>
+				<div class="info-personal-chat info-detail-col">
+					<img src="images/icon/chat_589708.png" alt="" class="extra-icon">
+				</div>
+			</div>
+		</div>
+		<iframe src="component/footer.html" class="footer"></iframe>
+	</div>
+</body>
+</html>
