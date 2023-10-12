@@ -1,3 +1,9 @@
+/* base styles */
+
+h1{
+    color: var(--bloodred);
+}
+
 /* Mobile-first: These rules apply by default */
 .flex-header-menu{
     display: none;  /*hide the header*/
@@ -15,10 +21,37 @@
     width: 100vw;  /*set the width to full screen*/
 }
 
-/*desktop: these rules are only applied if the screen is wider than 768px */
+/*desktop: these rules are only applied if the screen is wider than 1194px */
 @media only screen and (min-width: 1195px) {
     .flex-header-menu{
-        display: block; /*show the header*/
+        display: grid; /*show the header*/
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 2vh 5vw;
+    }
+
+    .header-name{
+        text-align: left;
+    }
+
+    .header-links{
+        justify-self:end;
+    }
+
+    .nav-link-logo{
+        width: 50px;
+        height: 50px;
+        margin: 10px 0px;
+    }
+
+    .header-name a, .header-links a{
+        padding: 0 10px;
+        color: var(--lightgrey);
+        white-space: nowrap; /*prevents spaces between words causing a link break */
+    }
+
+    .header-name a, .header-links a:hover{
+        border-bottom: 1px solid var(--lightgrey);
     }
     
     .flex-side-menu{
@@ -45,7 +78,12 @@
     }
     
     .flex-side-menu{
-        display: block;  /*hide the side menu*/
+        display: grid;  /*hide the side menu*/
+        grid-auto-rows: min-content;
+        justify-items: center;
+        align-items: start;
+        gap: 3vh;
+        text-align:center;
     }
 
     .flex-footer-menu{
@@ -64,5 +102,20 @@
     flex-shrink: 0;
     background-color: #542e71;
     color: #fff;
-    padding: 0px 4px;
+    padding: 0px 4px 0px 4px;
+}
+
+.nav-link{
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.flex-footer-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2vh 5vw;
+    text-align: center;
 }

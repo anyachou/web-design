@@ -7,23 +7,45 @@
         <link rel="stylesheet" href="css/general_style.css">
         <link rel="stylesheet" href="css/newcommunity.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/community.js"></script>
+        <script src="js/newcommunity.js"></script>
     </head>
     <body>
         <div class="flex-container">
             <header class="flex-header-menu header-menu" aria-label="Main menu">
-                <p>Top Menu</p>
+                <div class="header-name">
+                    <img class="nav-link-logo" aria-label="LOGO" alt="HomePage" src="./images/country/earth-globe_995153.png">
+                    <a href="" class="nav-link" aria-label="Find Friends" tab-index="0">Find Friends</a>
+                    <a href="" class="nav-link" aria-label="Community" tab-index="0">Community</a>
+                </div>
+                <div class="header-links">
+                    <a href="" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
+                </div>
             </header>
-            <aside class="flex-side-menu" aria-label="Main menu">
-                <p>Side Menu</p>
+            <aside class="flex-side-menu side-menu" aria-label="Main menu">
+                <a href="" class="nav-link" aria-label="Find Friends" aria-current="Friends">
+                    <span>Friend Zone</span>
+                </a>
+                <a href="" class="nav-link" aria-label="Community" aria-current="Community">
+                    <span>Community</span>
+                </a>
+                <a href="" class="nav-link" aria-label="About" aria-current="About">
+                    <span>About</span>
+                </a>
             </aside>
             <div class="flex-main-content main-content" aria-label="Main menu">
             Community
             </div>
-            <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
-                <p>Bottom Menu</p>
-            </footer>
         </div>
-        <script src="js/newcommunity.js"></script>
     </body>
+    <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
+        <a href="" class="nav-link" aria-label="Find Friends" aria-current="Friends">
+            <span>Friend Zone</span>
+        </a>
+        <a href="" class="nav-link" aria-label="Community" aria-current="Community">
+            <span>Community</span>
+        </a>
+        <a href="" class="nav-link" aria-label="About" aria-current="About">
+            <span>About</span>
+        </a>
+    </footer>
 </html>
