@@ -1,0 +1,68 @@
+/* Mobile-first: These rules apply by default */
+.flex-header-menu{
+    display: none;  /*hide the header*/
+}
+
+.flex-side-menu{
+    display: none;  /*hide the side menu*/
+}
+
+.flex-footer-menu{
+    display: block;  /*show the footer*/
+}
+
+.main-container{
+    width: 100vw;  /*set the width to full screen*/
+}
+
+/*desktop: these rules are only applied if the screen is wider than 768px */
+@media only screen and (min-width: 1195px) {
+    .flex-header-menu{
+        display: block; /*show the header*/
+    }
+    
+    .flex-side-menu{
+        display: none;  /*hide the side menu*/
+    }
+
+    .flex-footer-menu{
+        display: none; /*hide the footer*/
+    }
+
+    .main-container{
+        width: 75vw;
+    }
+}
+
+/*Tablet and phones in landscape*/
+@media only screen and (min-width: 601px) and (max-width: 1194px) {
+    .flex-container{
+        flex-direction: row;
+    }
+    
+    .flex-header-menu{
+        display: none; /*show the header*/
+    }
+    
+    .flex-side-menu{
+        display: block;  /*hide the side menu*/
+    }
+
+    .flex-footer-menu{
+        display: none; /*hide the footer*/
+    }
+}
+
+/* flexbox layout for overall page */
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-header-menu, .flex-footer-menu, .flex-side-menu{
+    flex-shrink: 0;
+    background-color: #542e71;
+    color: #fff;
+    padding: 0px 4px;
+}
