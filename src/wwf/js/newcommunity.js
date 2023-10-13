@@ -23,3 +23,24 @@ const updateAriaAttributes = () => {
 // run this code when the page first loads
 updateAriaAttributes();
 window.addEventListener("resize", updateAriaAttributes);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // JavaScript code to show/hide the language dropdown
+    document.querySelector(".selected-language").addEventListener("click", function() {
+        const languageList = document.querySelector(".language-list");
+        languageList.style.display = (languageList.style.display === "block") ? "none" : "block";
+    });
+
+    // JavaScript code to select a language and update the displayed language
+    const languageItems = document.querySelectorAll(".language-list li");
+    languageItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+            const selectedLanguage = document.querySelector(".selected-language");
+            selectedLanguage.textContent = item.textContent;
+            document.querySelector(".language-list").style.display = "none";
+        });
+    });
+});
+
+
