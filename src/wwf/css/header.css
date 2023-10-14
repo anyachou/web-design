@@ -64,79 +64,89 @@ nav {
     padding-left: 5px;
 }
 
-.logo {
-    height: 60px;
-    width: 60px;
-    margin: 0px 16px 0 10px;
+@media only screen and (min-width: 601px) {
+
+    .logo {
+        height: 60px;
+        width: 60px;
+        margin: 0px 16px 0 10px;
+    }
+
+    .selected-lang {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        line-height: 4;
+        width: 100px;
+    }
+
+    .selected-lang:before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../images/country/united-states-america_323310.png);
+    }
+
+    .lang-menu ul {
+        margin: 0;
+        padding: 0;
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    .lang-menu ul li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lang-menu ul li a {
+        width: 140px;
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .lang-menu ul li a:before {
+        content: '';
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .lang-menu ul li a:hover {
+        background-color: white;
+    }
+
+    .AU:before {
+        background-image: url(https://flagsapi.com/BE/flat/64.png);
+    }
+
+    .JP:before {
+        background-image: url(../images/country/japan_323308.png);
+    }
+
+    .FR:before {
+        background-image: url(../images/country/germany_555613.png);
+    }
+
+    .lang-menu:hover ul {
+        display: block;
+    }
 }
 
-.selected-lang {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    line-height: 4;
-    width: 100px;
-}
+@media only screen and (max-width: 600px) {
 
-.selected-lang:before {
-    content: "";
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(../images/country/united-states-america_323310.png);
-}
-
-.lang-menu ul {
-    margin: 0;
-    padding: 0;
-    color: black;
-    background-color: white;
-    border: 1px solid white;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-}
-
-.lang-menu ul li {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.lang-menu ul li a {
-    width: 140px;
-    display: block;
-    padding: 5px 10px;
-}
-
-.lang-menu ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 64px;
-    height: 64px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.lang-menu ul li a:hover {
-    background-color: white;
-}
-
-.AU:before {
-    background-image: url(https://flagsapi.com/BE/flat/64.png);
-}
-
-.JP:before {
-    background-image: url(../images/country/japan_323308.png);
-}
-
-.FR:before {
-    background-image: url(../images/country/germany_555613.png);
-}
-
-.lang-menu:hover ul {
-    display: block;
+    .logo {
+        display: none;
+    }
 }
