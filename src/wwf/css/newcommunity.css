@@ -258,21 +258,25 @@
 .board-wineimg{
     width:20px;
     height:20px;
+    padding: 2px;
 }
 
 .board-gameimg{
     width:20px;
     height:20px;
+    padding: 2px;
 }
 
 .board-bakeimg{
     width:20px;
     height:20px;
+    padding: 2px;
 }
 
 .board-tennisimg{
     width:20px;
     height:20px;
+    padding: 2px;
 }
 
 .board-wine{
@@ -308,9 +312,10 @@
 
 .post-info {
     border-radius: 20px;
-    background-color: rgb(114, 153, 179);
+    background-color: #9e9bc3;
     padding: 10px;
     margin: 10px;
+    box-shadow: 5px 5px 20px #9b9f9f;
 }
 
 .post-info-text {
@@ -322,12 +327,13 @@
 .post-info-image {
     padding: 10px;
     margin: 5px;
-    width: calc(100% - 30px);
+    width: 30%;
+    height: auto;
 }
 
 .post-info-functional {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .post-info-functional-option {
@@ -342,6 +348,37 @@
 .post-info-functional-option-icon {
     width: 20px;
     height: 20px;
+}
+
+.searchbox {
+    background-color: #9e9bc3;
+    width: 15%;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 6px;
+}
+
+.searchbox > input {
+    width: 70%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    padding: 0px 5px;
+}
+
+.search-icon:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/175/175283.png);
 }
 
 
