@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Community</title>
+        <link rel="stylesheet" href="css/general_style.css">
+        <link rel="stylesheet" href="css/newcommunity.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/newcommunity.js"></script>
+    </head>
+    <body>
+        <div class="flex-container">
+            <header class="flex-header-menu header-menu" aria-label="Main menu">
+                <div class="header-name">
+                    <img href="homepage.html" class="nav-link-logo" aria-label="LOGO" alt="HomePage" src="./images/country/earth-globe_995153.png">
+                    <a href="find_friends.html" class="nav-link" aria-label="Find Friends" tab-index="0">Find Friends</a>
+                    <a href="community.html" class="nav-link" aria-label="Community" tab-index="0">Community</a>
+                </div>
+                <div class="header-links">
+                    <a href="" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
+                    <div class="language-dropdown">
+                        <span class="selected-language">EN</span>
+                        <ul class="language-list">
+                            <li><img src="./images/country/united-states-america_323310.png" aria-label="English" alt="English"> EN</li>
+                            <li><img src="./images/country/united-arab-emirates_323301.png" aria-label="Arabic" alt="Arabic"> AR</li>
+                            <li><img src="./images/country/japan_323308.png" aria-label="Japanese"alt="Japanese"> JP</li>
+                            <li><img src="./images/country/taiwan_5922010.png" aria-label="Taiwanese"alt="Taiwan"> TW</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <aside class="flex-side-menu side-menu" aria-label="Main menu">
+                <a href="find_friends.html" class="nav-link" aria-label="Find Friends" aria-current="Friends">
+                    <span>Friend Zone</span>
+                </a>
+                <a href="community.html" class="nav-link" aria-label="Community" aria-current="Community">
+                    <span>Community</span>
+                </a>
+                <a href="" class="nav-link" aria-label="About" aria-current="About">
+                    <span>About</span>
+                </a>
+            </aside>
+            <section class="flex-main-content main-content" aria-label="Main menu">
+                <div class="grid-row">
+                    <div class="col-3 col-md-4 col-lg-2">
+                        <div class="sidebar">
+                            <div id="community-main">
+                                <div id="board-grid">
+                                    <div id="board-my-grid" class="board-grid">
+                                        <h4>My Community</h4>
+                                        <div class="board-grid-option">Wine</div>
+                                    </div>
+                                    <div id="board-hot-grid" class="board-grid">
+                                        <h4>Hot Topics</h4>
+                                        <div class="board-wine">
+                                            <img class="board-wineimg" src="./images/icon/glass-with-wine_65667.png" alt="wine">
+                                            <div class="board-grid-option">Wine</div>
+                                        </div>
+                                        <div class="board-game">
+                                            <img class="board-gameimg" src="./images/icon/game-controller_9482080.png" alt="game">
+                                            <div class="board-grid-option">Game</div>
+                                        </div>
+                                        <div class="board-baking">
+                                            <img class="board-bakeimg" src="./images/icon/baking_1973791.png" alt="baking">
+                                            <div class="board-grid-option">Baking</div>
+                                        </div>
+                                        <div class="board-tennis">
+                                            <img class="board-tennisimg" src="./images/icon/tennis_5023365.png" alt="tennis">
+                                            <div class="board-grid-option">Tennis</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-8 col-lg-10">
+                        <div id="posts-info-grid">
+                            <div class="post-info">
+                                <input class="post-type" type="hidden" value="Game"/>
+                                <p class="post-info-text">I got a suspension on xbox because of this I was talking about
+                                    game.</p>
+                                <img src="images/community/video-game.jpg" alt="" class="post-info-image"/>
+                                <div class="post-info-functional">
+                                    <div class="post-info-functional-option">
+                                        <img src="images/icon/up.png" alt="" class="post-info-functional-option-icon"/>
+                                        <span>1.2k</span>
+                                        <img src="images/icon/down.png" alt="" class="post-info-functional-option-icon"/>
+                                    </div>
+                                    <div class="post-info-functional-option">
+                                        <img src="images/icon/comment.png" alt="" class="post-info-functional-option-icon"/>
+                                        <span>34</span>
+                                    </div>
+                                    <div class="post-info-functional-option">
+                                        <img src="images/icon/send.png" alt="" class="post-info-functional-option-icon"/>
+                                        <span>Share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-row">
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
+        <a href="" class="nav-link" aria-label="Find Friends" aria-current="Friends">
+            <span>Friend Zone</span>
+<!--            <ul>-->
+                <p>London</p>
+                <p>Toronto</p>
+                <p>Hamberg</p>
+                <p>Brisbane</p>
+                <p>Sydney</p>
+<!--            </ul>-->
+        </a>
+        <a href="" class="nav-link" aria-label="Community" aria-current="Community">
+            <span>Community</span>
+            <ul>
+                <li>My Comunity</li>
+                <li>Hot Topics</li>
+                <li>All Topics</li>
+            </ul>
+        </a>
+        <a href="" class="nav-link" aria-label="About" aria-current="About">
+            <span>About</span>
+            <ul>
+                <li>FAQ</li>
+                <li>About Us</li>
+                <li id="information-contact-us">Contact Us</li>
+            </ul>
+        </a>
+    </footer>
+</html>
