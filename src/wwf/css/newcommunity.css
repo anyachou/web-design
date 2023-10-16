@@ -163,6 +163,12 @@ h1{
     text-align: center;
 }
 
+.language-current {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .language-dropdown {
     display: grid;
     grid-template-columns: auto 1fr;
