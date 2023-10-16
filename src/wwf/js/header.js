@@ -33,7 +33,7 @@ $(document).ready(() => {
     // Redirect Find Friend
     $('#find-friend-label').click(() => window.parent.location.href = '../find_friends.html');
     // Redirect Community
-    $('#community-label').click(() => window.parent.location.href = '../community.html');
+    $('#community-label').click(() => window.parent.location.href = '../newcommunity.html');
     // Redirect Homepage
     $('#wwflogo').click(() => window.parent.location.href = '../homepage.html');
 });

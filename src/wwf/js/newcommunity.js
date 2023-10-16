@@ -44,5 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Redirect Homepage
+$('#wwflogo').click(() => window.parent.location.href = '../homepage.html');
+
 
 

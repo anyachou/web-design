@@ -1,9 +1,16 @@
 /* base styles */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
 .nav-link{
     color: #fff; 
     text-decoration: none; 
     font-weight: bold;
 }
+
+
 /* Mobile-first: These rules apply by default */
 .flex-header-menu{
     display: none;  /*hide the header*/
@@ -345,6 +352,7 @@
 
 .flex-header-menu, .flex-footer-menu, .flex-side-menu {
     flex-shrink: 0;
+    font-family: 'Young Serif', serif;
     background-color: #542e71;
     color: #fff;
     padding: 0px 4px 0px 4px;
