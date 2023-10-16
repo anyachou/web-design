@@ -10,7 +10,6 @@ html, body{
     font-weight: bold;
 }
 
-
 /* Mobile-first: These rules apply by default */
 .flex-header-menu{
     display: none;  /*hide the header*/
@@ -378,21 +377,26 @@ html, body{
 .language-list {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
+
 }
 
-.language-list li {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
+.language-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-top:5px;
+    margin-top:5px;
 }
 
-.language-list img {
+.language-list-item label {
+    color: black;
+}
+
+.language-item-image {
     width: 40px;
     height: 40px;
     margin-right: 10px;
