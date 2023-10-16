@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/general_style.css">
         <link rel="stylesheet" href="css/newcommunity.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/newcommunity.js"></script>
+        <script src="./js/new_headerfooter.js"></script>
     </head>
     <body>
         <div class="flex-container">
@@ -42,9 +42,9 @@
                     <span>About</span>
                 </a>
             </aside>
-            <section class="flex-main-content main-content" aria-label="Main menu">
+            <section class="flex-main-content main-content" aria-label="Main content">
                 <div class="grid-row">
-                    <div class="col-2 col-md-6 col-lg-2">
+                    <div class="col-4 col-md-6 col-lg-2">
                         <div class="sidebar">
                             <div id="community-main">
                                 <div id="board-grid">
@@ -112,29 +112,25 @@
         </div>
     </body>
     <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
-        <a href="" class="nav-link" aria-label="Find Friends" aria-current="Friends">
-            <span>Friend Zone</span>
-                <p>London</p>
-                <p>Toronto</p>
-                <p>Hamberg</p>
-                <p>Brisbane</p>
-                <p>Sydney</p>
-        </a>
-        <a href="" class="nav-link" aria-label="Community" aria-current="Community">
-            <span>Community</span>
-            <ul>
-                <li>My Comunity</li>
-                <li>Hot Topics</li>
-                <li>All Topics</li>
-            </ul>
-        </a>
-        <a href="" class="nav-link" aria-label="About" aria-current="About">
-            <span>About</span>
-            <ul>
-                <li>FAQ</li>
-                <li>About Us</li>
-                <li id="information-contact-us">Contact Us</li>
-            </ul>
-        </a>
+            <div class="footer-friend">
+                <span>Friend Zone</span>
+                    <a href="find_friends.html" aria-label="London" tab-index="0">London</a>
+                    <a href="find_friends.html" aria-label="Toronto" tab-index="0">Toronto</a>
+                    <a href="find_friends.html" aria-label="Hamberg" tab-index="0">Hamberg</a>
+                    <a href="find_friends.html" aria-label="Brisbane" tab-index="0">Brisbane</a>
+                    <a href="find_friends.html" aria-label="Sydney" tab-index="0">Sydney</a>
+            </div>
+            <div class="footer-community">
+                <span>Community</span>
+                    <a href="new-community.html" aria-label="my community" tab-index="0">My Comunity</a>
+                    <a href="new-community.html" aria-label="hot topics" tab-index="0">Hot Topics</a>
+                    <a href="new-community.html" aria-label="all topics" tab-index="0">All Topics</a>
+            </div>
+            <div class="footer-about">
+                <span>About</span>
+                    <a href="new-community.html" aria-label="my community" tab-index="0">Contact Us</a>
+                    <a href="new-community.html" aria-label="hot topics" tab-index="0">About Us</a>
+                    <a href="new-community.html" aria-label="all topics" tab-index="0">FAQ</a>
+            </div>
     </footer>
 </html>

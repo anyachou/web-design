@@ -16,7 +16,7 @@ const updateAriaAttributes = () => {
     } else {
         header_menu.setAttribute("aria-hidden", "false");
         side_menu.setAttribute("aria-hidden", "true");
-        footer_menu.setAttribute("aria-hidden", "true");
+        footer_menu.setAttribute("aria-hidden", "false");
     }
 }
 
@@ -27,8 +27,10 @@ window.addEventListener("resize", updateAriaAttributes);
 
 document.addEventListener("DOMContentLoaded", function() {
     // JavaScript code to show/hide the language dropdown
-    document.querySelector(".selected-language").addEventListener("click", function() {
-        const languageList = document.querySelector(".language-list");
+    const selectedLanguage = document.querySelector(".selected-language");
+    const languageList = document.querySelector(".language-list");
+
+    selectedLanguage.addEventListener("click", function() {
         languageList.style.display = (languageList.style.display === "block") ? "none" : "block";
     });
 
@@ -36,11 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const languageItems = document.querySelectorAll(".language-list li");
     languageItems.forEach(function(item) {
         item.addEventListener("click", function() {
-            const selectedLanguage = document.querySelector(".selected-language");
             selectedLanguage.textContent = item.textContent;
-            document.querySelector(".language-list").style.display = "none";
+            languageList.style.display = "none";
         });
     });
 });
+
 
 

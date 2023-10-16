@@ -17,8 +17,72 @@
     display: block;  /*show the footer*/
 }
 
-.flex-footer-menu ul {
-    display: none;
+.flex-footer-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2vh 5vw;
+    text-align: center;
+}
+
+.footer-friend{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-friend span{
+    font-size: larger;
+}
+
+.footer-friend a{
+    color: #fff;
+    margin: 3px;
+    text-decoration:none;
+}
+
+.footer-friend a:hover{
+    color: #ebd257;
+}
+
+.footer-community{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-community span{
+    font-size: larger;
+    margin: 4px;
+}
+
+.footer-community a{
+    color: #fff;
+    margin: 6px 0px;
+    text-decoration:none;
+}
+
+.footer-community a:hover{
+    color: #ebd257;
+}
+
+.footer-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-about span{
+    font-size: larger;
+    margin: 4px;
+}
+
+.footer-about a{
+    color: #fff;
+    margin: 6px 0px;
+    text-decoration:none;
+}
+
+.footer-about a:hover{
+    color: #ebd257;
 }
 
 .main-container{
@@ -35,11 +99,71 @@
 /* Desktop:These rules are only applied if the screen is wider than 768px */
 @media only screen and (min-width: 768px) {
     .flex-header-menu{ 
-        /* display: grid; 
+        display: grid; 
         grid-template-columns: auto 1fr;
         align-items: center;
-        padding: 2vh 5vw; */
-        display: block;
+        padding: 2vh 5vw;
+    }
+
+    .header-name{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+    }
+
+    .header-links{
+        display: grid;
+        grid-template-columns: auto;
+        justify-self:end;
+    }
+
+    .nav-link-logo{
+        width: 50px;
+        height: 50px;
+        margin: 10px 0px;
+    }
+
+    .header-name a, .header-links a{
+        padding: 0 10px;
+        white-space: nowrap; /*prevents spaces between words causing a link break */
+    }
+
+    .header-name a, .header-links a:hover{
+        border-bottom: 1px solid;
+    }
+    
+    .flex-side-menu{
+        display: none;  /*hide the side menu*/
+    }
+
+    .flex-footer-menu{
+        display: none;  /*hide the footer*/
+    }
+
+    .main-container{
+        width: 75vw;
+    }
+
+    .col-lg-1 { grid-column: span 1; }
+    .col-lg-2 { grid-column: span 2; }
+    .col-lg-3 { grid-column: span 3; }
+    .col-lg-4 { grid-column: span 4; }
+    .col-lg-5 { grid-column: span 5; }
+    .col-lg-6 { grid-column: span 6; }
+    .col-lg-7 { grid-column: span 7; }
+    .col-lg-8 { grid-column: span 8; }
+    .col-lg-9 { grid-column: span 9; }
+    .col-lg-10 { grid-column: span 10; }
+    .col-lg-11 { grid-column: span 11; }
+    .col-lg-12 { grid-column: span 12; }
+}
+/* Desktop: These rules are only applied if the screen is wider than 1194px */
+@media only screen and (min-width: 1195px){
+    .flex-header-menu{ 
+        display: grid; 
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 2vh 5vw;
     }
 
     .header-name{
@@ -68,45 +192,78 @@
     .header-name a, .header-links a:hover{
         border-bottom: 1px solid var(--lightgrey);
     }
-    
+
     .flex-side-menu{
-        display: none;  /*hide the side menu*/
+        display: none;
     }
 
     .flex-footer-menu{
-        display: none; /*hide the footer*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 2vh 5vw;
+        text-align: center;
     }
-
-    .main-container{
-        width: 75vw;
+    
+    .footer-friend{
+        display: flex;
+        flex-direction: column;
     }
-
-    .col-lg-1 { grid-column: span 1; }
-    .col-lg-2 { grid-column: span 2; }
-    .col-lg-3 { grid-column: span 3; }
-    .col-lg-4 { grid-column: span 4; }
-    .col-lg-5 { grid-column: span 5; }
-    .col-lg-6 { grid-column: span 6; }
-    .col-lg-7 { grid-column: span 7; }
-    .col-lg-8 { grid-column: span 8; }
-    .col-lg-9 { grid-column: span 9; }
-    .col-lg-10 { grid-column: span 10; }
-    .col-lg-11 { grid-column: span 11; }
-    .col-lg-12 { grid-column: span 12; }
-}
-/* Desktop: These rules are only applied if the screen is wider than 1194px */
-@media only screen and (min-width: 1195px){
-    .flex-header-menu{  /* show the header */
-        display: block;
+    
+    .footer-friend span{
+        font-size: larger;
     }
-
-    .flex-side-menu{
-        display: none;
+    
+    .footer-friend a{
+        color: #fff;
+        margin: 3px;
+        text-decoration:none;
     }
-
-    .flex-footer-menu{ /* hide the header */
-        display: none;
+    
+    .footer-friend a:hover{
+        color: #ebd257;
     }
+    
+    .footer-community{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-community span{
+        font-size: larger;
+        margin: 4px;
+    }
+    
+    .footer-community a{
+        color: #fff;
+        margin: 6px 0px;
+        text-decoration:none;
+    }
+    
+    .footer-community a:hover{
+        color: #ebd257;
+    }
+    
+    .footer-about{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-about span{
+        font-size: larger;
+        margin: 4px;
+    }
+    
+    .footer-about a{
+        color: #fff;
+        margin: 6px 0px;
+        text-decoration:none;
+    }
+    
+    .footer-about a:hover{
+        color: #ebd257;
+    }    
 
     .main-container-menu{
         width: 75vw;
@@ -148,13 +305,18 @@
     }
     
     .flex-side-menu{
-        display: block;
-        /* display: grid;  
+        display: grid;  
+        background-color: #542e71;
+        color: #fff;
         grid-auto-rows: min-content;
         justify-items: center;
         align-items: start;
         gap: 3vh;
-        text-align:center; */
+        text-align: center;
+    }
+
+    .flex-side-menu span{
+        display: block;
     }
 
     .flex-footer-menu{
@@ -179,7 +341,6 @@
     .col-md-10 { grid-column: span 10; }
     .ccol-md-11 { grid-column: span 11; }
     .col-md-12 { grid-column: span 12; }
-        
 }
 
 /* flexbox layout for overall page */
@@ -194,15 +355,6 @@
     background-color: #542e71;
     color: #fff;
     padding: 0px 4px 0px 4px;
-}
-
-.flex-footer-menu{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    padding: 2vh 5vw;
-    text-align: center;
 }
 
 .header-links {
