@@ -364,9 +364,17 @@ html, body{
     margin: 10px;
 }
 
+.language-current {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .language-dropdown {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: auto 1fr;
     margin-right: 10px;
+    justify-content: center;
 }
 
 .selected-language {
@@ -380,7 +388,7 @@ html, body{
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     list-style: none;
-    padding: 0;
+    padding-top: 1%;
     margin-top: 20px;
 
 }
@@ -397,8 +405,8 @@ html, body{
 }
 
 .language-item-image {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 

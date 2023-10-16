@@ -1,12 +1,7 @@
-$(document).ready(function () {
-
-    $('#wwflogo').click(() => window.location.href = './homepage.html');
-
-    let local_lang = localStorage.getItem('lang');
-    if(local_lang === null) local_lang = 'EN';
-    const current_lang = $('#language-current');
-    let local_lang_img = $('#language-list-item-image-en');
-    let local_lang_label = $('#language-list-item-label-en');
+function change_language(){
+    const local_lang = localStorage.getItem('lang');
+    let local_lang_img;
+    let local_lang_label;
 
     if (local_lang === null || local_lang === 'EN') {
         local_lang_img = $('#language-list-item-image-en');
@@ -22,38 +17,39 @@ $(document).ready(function () {
         local_lang_label = $('#language-list-item-label-ar');
     }
 
-    current_lang.appendChild(local_lang_img);
-    current_lang.appendChild(local_lang_label);
 
+    $('#language-current-image').attr('src', local_lang_img.attr("src"));
+    $('#language-current-label').text(local_lang_label.text());
+}
 
-    const current_list = $('#language-list');
-    current_lang.click(() => {
-        current_list.css('display', 'block');
+$(document).ready(function () {
+
+    $('#wwflogo').click(() => window.location.href = './homepage.html');
+
+    const $language_list = $('#language-list');
+    $('#language-current').click(() => {
+        $language_list.show();
     });
 
     $('#language-list-item-en').click(() => {
-        current_lang.removeChild(local_lang_img);
-        current_lang.removeChild(local_lang_label);
-        current_list.css('display', 'none');
+        $language_list.hide();
         localStorage.setItem('lang', 'EN');
+        change_language();
     });
     $('#language-list-item-jp').click(() => {
-        current_lang.removeChild(local_lang_img);
-        current_lang.removeChild(local_lang_label);
-        current_list.css('display', 'none');
+        $language_list.hide();
         localStorage.setItem('lang', 'JP');
+        change_language();
     });
     $('#language-list-item-ar').click(() => {
-        current_lang.removeChild(local_lang_img);
-        current_lang.removeChild(local_lang_label);
-        current_list.css('display', 'none');
+        $language_list.hide();
         localStorage.setItem('lang', 'AR');
+        change_language();
     });
     $('#language-list-item-tw').click(() => {
-        current_lang.removeChild(local_lang_img);
-        current_lang.removeChild(local_lang_label);
-        current_list.css('display', 'none');
+        $language_list.hide();
         localStorage.setItem('lang', 'TW');
+        change_language();
     });
 
 
@@ -64,21 +60,23 @@ $(document).ready(function () {
         const side_menu = $('#flex-side-menu')
 
         if (width <= 600) {
-            header_menu.setAttribute("aria-hidden", "true");
-            side_menu.setAttribute("aria-hidden", "true");
-            footer_menu.setAttribute("aria-hidden", "false");
+            header_menu.attr("aria-hidden", "true");
+            side_menu.attr("aria-hidden", "true");
+            footer_menu.attr("aria-hidden", "false");
         } else if (width <= 1194) {
-            header_menu.setAttribute("aria-hidden", "true");
-            side_menu.setAttribute("aria-hidden", "false");
-            footer_menu.setAttribute("aria-hidden", "true");
+            header_menu.attr("aria-hidden", "true");
+            side_menu.attr("aria-hidden", "false");
+            footer_menu.attr("aria-hidden", "true");
         } else {
-            header_menu.setAttribute("aria-hidden", "false");
-            side_menu.setAttribute("aria-hidden", "true");
-            footer_menu.setAttribute("aria-hidden", "false");
+            header_menu.attr("aria-hidden", "false");
+            side_menu.attr("aria-hidden", "true");
+            footer_menu.attr("aria-hidden", "false");
         }
     };
 
     $(window).resize(updateAriaAttribute);
+    change_language();
+
     updateAriaAttribute();
 
     // $('#wwflogo').click(function(){
