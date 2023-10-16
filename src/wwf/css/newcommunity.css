@@ -157,9 +157,17 @@ h1{
     align-items: center;
 }
 
+.language-current {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .language-dropdown {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: auto 1fr;
     margin-right: 10px;
+    justify-content: center;
 }
 
 .selected-language {
@@ -173,11 +181,65 @@ h1{
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-top: 1%;
+    margin-top: 20px;
+
 }
 
-.language-list li {
+.language-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-top:5px;
+    margin-top:5px;
+}
+
+.language-list-item label {
+    color: black;
+}
+
+.language-item-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.board-grid {
+    width: 150px;
+    height: 40px;
+}
+
+.board-grid {
+    text-align: left;
+    border: none;
+    margin: 30px 5px;
+    height: 50px;
+}
+
+.board-wineimg{
+    width:20px;
+    height:20px;
+    padding: 2px;
+}
+
+.board-gameimg{
+    width:20px;
+    height:20px;
+    padding: 2px;
+}
+
+.board-bakeimg{
+    width:20px;
+    height:20px;
+    padding: 2px;
+}
+
+.board-tennisimg{
+    width:20px;
+    height:20px;
+    padding: 2px;
+}
+
+.board-wine{
     display: flex;
     align-items: center;
     padding: 10px;
