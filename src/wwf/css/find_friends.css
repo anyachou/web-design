@@ -189,7 +189,7 @@ html, body{
     }
 
     .header-name a, .header-links a:hover{
-        border-bottom: 1px solid var(--lightgrey);
+        border-bottom: 1px solid #542e71;
     }
 
     .flex-side-menu{
@@ -414,6 +414,12 @@ html, body{
     width: 100%;
     height: 100%;
     margin-top: -10px;
+}
+
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropmenu_grid{
