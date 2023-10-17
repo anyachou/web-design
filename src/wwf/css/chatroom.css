@@ -184,150 +184,88 @@ html, body{
     margin-right: 10px;
 }
 
-.chatwith {
-    background-color: #b3cbb9;
-    font-family: 'Young Serif', serif;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    border-color: #b3cbb9;
+.chatroom-main {
+    width: 100%;
+    height: calc(100% - 80px);
     margin-top: -10px;
-    padding: 10px;
 }
 
-.community {
-    background-color: #ffffff;
-    font-family: 'Young Serif', serif;
-    font-size: 40px;
+.chatroom-container {
+    height: calc(100% - 200px);
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.chatroom-container-receipt {
+    width: 350px;
+    padding: 0 0 20px 10px;
+}
+
+.chatroom-container-message-box {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 40px 25px 20px 10px;
+}
+
+.chatroom-container-receipt-header {
+    text-align: center;
+    margin: 15px;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.chatroom-container-receipt-info {
     display: flex;
-    height: auto;
-    justify-content: center;
-    position: relative;
-}
-
-.worldwide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.imgfriends {
-    height: 40%;
-    width: 40%;
-    z-index: -1;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-.nation-flag {
-    display: flex;
-    height: 300px;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    background-color: #b3cbb9;
-}
-
-.flags {
-    height: auto;
-    width: 35%;
-}
-
-.practice {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Young Serif', serif;
-    background-color: #b3cbb9;
-    height: 60px;
-}
-
-.searchbox {
-    background-color: #ffffff;
-    width: 15%;
-    height: 50px;
+    border: 2px solid black;
     border-radius: 30px;
-    display: flex;
+    margin: 5px 15px 10px 15px;
+    padding: 2px 0 2px 5px;
+}
+
+.chatroom-container-receipt-info-image {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 150px;
+}
+
+.chatroom-container-receipt-info label {
+    font-size: 24px;
+    margin: 10px 0 5px 15px;
+
+}
+
+.chatroom-container-message-box-input{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: center;
     align-items: center;
-    padding: 0px 20px;
-    margin-top: 6px;
 }
 
-input {
-    width: 70%;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 16px;
-    padding: 0px 5px;
+.chatroom-container-message-box-input-icon {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
 }
 
-.search-icon:hover {
-    color: orange;
-    cursor: pointer;
-}
-
-.search-icon {
-    width: 25px;
-    height: 25px;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/175/175283.png);
-}
-
-.community-enter-row {
-    display: flex;
-    padding: 40px;
+.chatroom-container-message-box-input-input {
     margin: 20px;
-    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: calc(100% - 80px)
 }
 
-.community-enter-info {
-    padding: 10px;
+.chatroom-container-message-me {
+    float: right;
+}
+
+.chatroom-container-message-box-content-detail-image {
+    height: 40px;
+    width: 40px;
     margin: 10px;
-}
-
-.community-enter-info-image {
-    height: 120px;
-    width: 120px;
-    border-radius: 80%;
-    padding-bottom: 10px;
-}
-
-.community-enter-info-title{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.community-enter-row-1 {
-    display: flex;
-    justify-content: center;
-    padding: 0px 20px;
-    margin: 0px;
-}
-
-.community-enter-info-image-1{
-    height: 120px;
-    width: 120px;
-    border-radius: 80%;
-    padding-bottom: 10px;
-}
-
-.community-enter-info-1 {
-    padding: 0px 10px;
-    margin: 10px;
-}
-
-.community-enter-info-title-1{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
+    padding: 5px;
+    border-radius: 150px;
 }
 
 /*Tablet and phones in landscape*/
@@ -529,9 +467,4 @@ input {
     .col-lg-10 { grid-column: span 10; }
     .col-lg-11 { grid-column: span 11; }
     .col-lg-12 { grid-column: span 12; }
-
 }
-
-
-
-

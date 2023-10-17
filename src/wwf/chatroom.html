@@ -5,11 +5,164 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Chatroom</title>
 	<link rel="stylesheet" href="css/general_style.css">
+	<link rel="stylesheet" href="css/chatroom.css">
 </head>
 <body>
-	<iframe src="component/header.html" class="header"></iframe>
-	<div>
-		<iframe src="component/footer.html" class="footer"></iframe>
+<div class="flex-container">
+	<header id="flex-header-menu" class="flex-header-menu header-menu" aria-label="Main menu">
+		<div class="header-name">
+			<img id="wwflogo" class="nav-link-logo"
+					aria-label="LOGO" alt="HomePage"
+					src="./images/country/earth-globe_995153.png">
+			<a href="find_friends.html" class="nav-link"
+				aria-label="Find Friends" tabindex="0">Find Friends</a>
+			<a href="newcommunity.html" class="nav-link" aria-label="Community"
+				tabindex="0">Community</a>
+		</div>
+		<div class="header-links">
+			<div class="language-dropdown">
+				<div id="language-current" class="language-current" aria-label="language-current">
+					<img src="/" id="language-current-image" class="language-item-image" alt=""/>
+					<label id="language-current-label" class=""></label>
+				</div>
+				<div id="language-list" class="language-list">
+					<div id="language-list-item-en" class="language-list-item">
+						<img
+								src="./images/country/united-states-america_323310.png"
+								class="language-item-image" aria-label="English"
+								alt="English" id="language-list-item-image-en"/>
+						<label id="language-list-item-label-en">EN</label>
+					</div>
+					<div id="language-list-item-ar" class="language-list-item">
+						<img
+								src="./images/country/united-arab-emirates_323301.png"
+								class="language-item-image" aria-label="Arabic"
+								alt="Arabic" id="language-list-item-image-ar"/>
+						<label  id="language-list-item-label-ar">AR</label>
+					</div>
+					<div id="language-list-item-jp" class="language-list-item">
+						<img src="./images/country/japan_323308.png"
+								class="language-item-image"
+								aria-label="Japanese" alt="Japanese"
+								id="language-list-item-image-jp"/>
+						<label id="language-list-item-label-jp">JP</label>
+					</div>
+					<div id="language-list-item-tw" class="language-list-item">
+						<img
+								src="./images/country/taiwan_5922010.png"
+								class="language-item-image"
+								aria-label="Taiwanese" alt="Taiwan"
+								id="language-list-item-image-tw"/>
+						<label  id="language-list-item-label-tw">TW</label>
+					</div>
+				</div>
+				<a href="" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
+			</div>
+		</div>
+	</header>
+	<aside id="flex-side-menu" class="flex-side-menu side-menu" aria-label="Main menu">
+		<img href="homepage.html" class="nav-link-logo" aria-label="LOGO"
+				alt="HomePage" src="./images/country/earth-globe_995153.png">
+		<a href="find_friends.html" class="nav-link" aria-label="Find Friends"
+			aria-current="Friends">
+			<span>Friend Zone</span>
+		</a>
+		<a href="newcommunity.html" class="nav-link" aria-label="Community"
+			aria-current="Community">
+			<span>Community</span>
+		</a>
+		<a href="" class="nav-link" aria-label="About" aria-current="About">
+			<span>About</span>
+		</a>
+	</aside>
+	<div id="chatroom-main" class="chatroom-main">
+		<div id="chatroom-container" class="chatroom-container">
+			<div id="chatroom-container-receipt" class="chatroom-container-receipt">
+				<div id="chatroom-container-receipt-header" class="chatroom-container-receipt-header">CHATROOM</div>
+				<div id="chatroom-container-receipt-info-1" class="chatroom-container-receipt-info">
+					<img class="chatroom-container-receipt-info-image" src="images/icon/beauty_2763444.png" alt="" />
+					<label>Claire Li</label>
+				</div>
+				<div id="chatroom-container-receipt-info-2" class="chatroom-container-receipt-info">
+					<img class="chatroom-container-receipt-info-image" src="images/icon/man.png" alt="" />
+					<label>Ben Zhu</label>
+				</div>
+				<div id="chatroom-container-receipt-info-3" class="chatroom-container-receipt-info">
+					<img class="chatroom-container-receipt-info-image" src="images/icon/beauty_2763444.png" alt="" />
+					<label>Ajkalert</label>
+				</div>
+				<div id="chatroom-container-receipt-info-4" class="chatroom-container-receipt-info">
+					<img class="chatroom-container-receipt-info-image" src="images/icon/man.png" alt="" />
+					<label>Jacob</label>
+				</div>
+				<div id="chatroom-container-receipt-info-5" class="chatroom-container-receipt-info">
+					<img class="chatroom-container-receipt-info-image" src="images/icon/beauty_2763444.png" alt="" />
+					<label>MM</label>
+				</div>
+			</div>
+			<div id="chatroom-container-message-box" class="chatroom-container-message-box">
+				<div id="chatroom-container-message-box-header" class="chatroom-container-message-box-header"></div>
+				<div id="chatroom-container-message-box-content" class="chatroom-container-message-box-content">
+					<div class="chatroom-container-message-box-content-detail">
+						<img src="images/icon/beauty_2763444.png" alt="" class="chatroom-container-message-box-content-detail-image" />
+						<span class="chatroom-container-message-box-content-detail-text">Hello</span>
+					</div>
+					<div class="chatroom-container-message-box-content-detail">
+						<img src="images/icon/beauty_2763444.png" alt="" class="chatroom-container-message-box-content-detail-image" />
+						<span class="chatroom-container-message-box-content-detail-text">How are you?</span>
+					</div>
+					<div class="chatroom-container-message-box-content-detail ">
+						<img src="images/icon/man.png" alt="" class="chatroom-container-message-box-content-detail-image" />
+						<span class="chatroom-container-message-box-content-detail-text">Fine</span>
+					</div>
+					<div class="chatroom-container-message-box-content-detail ">
+						<img src="images/icon/man.png" alt="" class="chatroom-container-message-box-content-detail-image" />
+						<span class="chatroom-container-message-box-content-detail-text">I have to go.</span>
+					</div>
+					<div class="chatroom-container-message-box-content-detail">
+						<img src="images/icon/beauty_2763444.png" alt="" class="chatroom-container-message-box-content-detail-image" />
+						<span class="chatroom-container-message-box-content-detail-text">OK, bye.</span>
+					</div>
+				</div>
+				<div id="chatroom-container-message-box-input" class="chatroom-container-message-box-input">
+					<img id="chatroom-container-message-box-input-camera" src="images/icon/camera_5541519.png" class="chatroom-container-message-box-input-icon" alt="" />
+					<input id="" class="chatroom-container-message-box-input-input" type="text" placeholder="Message"/>
+					<img id="chatroom-container-message-box-input-plus" src="images/icon/like_739231.png" class="chatroom-container-message-box-input-icon" alt="" />
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
+<footer id="flex-footer-menu" class="flex-footer-menu footer-menu" aria-label="Main menu">
+    <div class="footer-friend">
+        <span>Friend Zone</span>
+        <a href="find_friends.html" aria-label="London" tabindex="0">London</a>
+        <a href="find_friends.html" aria-label="Toronto"
+           tabindex="0">Toronto</a>
+        <a href="find_friends.html" aria-label="Hamberg"
+           tabindex="0">Hamberg</a>
+        <a href="find_friends.html" aria-label="Brisbane"
+           tabindex="0">Brisbane</a>
+        <a href="find_friends.html" aria-label="Sydney" tabindex="0">Sydney</a>
+    </div>
+    <div class="footer-community">
+        <span>Community</span>
+        <a href="newcommunity.html" aria-label="my community" tabindex="0">My
+            Comunity</a>
+        <a href="newcommunity.html" aria-label="hot topics" tabindex="0">Hot
+            Topics</a>
+        <a href="newcommunity.html" aria-label="all topics" tabindex="0">All
+            Topics</a>
+    </div>
+    <div class="footer-about">
+        <span>About</span>
+        <a href="contact_us.html" aria-label="Contact
+            Us" tabindex="0">Contact
+            Us</a>
+        <a aria-label="hot topics" tabindex="0">About
+            Us</a>
+        <a aria-label="all topics"
+           tabindex="0">FAQ</a>
+    </div>
+</footer>
 </html>
