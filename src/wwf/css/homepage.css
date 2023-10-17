@@ -1,3 +1,15 @@
+/* base styles */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Mobile-first: These rules apply by default */
 .flex-header-menu{
     display: none;  /*hide the header*/
@@ -85,8 +97,8 @@
 
 /* Desktop:These rules are only applied if the screen is wider than 768px */
 @media only screen and (min-width: 768px) {
-    .flex-header-menu{ 
-        display: grid; 
+    .flex-header-menu{
+        display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         padding: 2vh 5vw;
@@ -118,7 +130,7 @@
     .header-name a, .header-links a:hover{
         border-bottom: 1px solid;
     }
-    
+
     .flex-side-menu{
         display: none;  /*hide the side menu*/
     }
@@ -146,8 +158,8 @@
 }
 /* Desktop: These rules are only applied if the screen is wider than 1194px */
 @media only screen and (min-width: 1195px){
-    .flex-header-menu{ 
-        display: grid; 
+    .flex-header-menu{
+        display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         padding: 2vh 5vw;
@@ -192,65 +204,65 @@
         padding: 2vh 5vw;
         text-align: center;
     }
-    
+
     .footer-friend{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-friend span{
         font-size: larger;
     }
-    
+
     .footer-friend a{
         color: #fff;
         margin: 3px;
         text-decoration:none;
     }
-    
+
     .footer-friend a:hover{
         color: #ebd257;
     }
-    
+
     .footer-community{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-community span{
         font-size: larger;
         margin: 4px;
     }
-    
+
     .footer-community a{
         color: #fff;
         margin: 6px 0px;
         text-decoration:none;
     }
-    
+
     .footer-community a:hover{
         color: #ebd257;
     }
-    
+
     .footer-about{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-about span{
         font-size: larger;
         margin: 4px;
     }
-    
+
     .footer-about a{
         color: #fff;
         margin: 6px 0px;
         text-decoration:none;
     }
-    
+
     .footer-about a:hover{
         color: #ebd257;
-    }    
+    }
 
     .main-container-menu{
         width: 75vw;
@@ -286,13 +298,13 @@
     .flex-container{
         flex-direction: row;
     }
-    
+
     .flex-header-menu{
         display: none; /*show the header*/
     }
-    
+
     .flex-side-menu{
-        display: grid;  
+        display: grid;
         background-color: #542e71;
         color: #fff;
         grid-auto-rows: min-content;
@@ -339,10 +351,63 @@
 
 .flex-header-menu, .flex-footer-menu, .flex-side-menu {
     flex-shrink: 0;
+    font-family: 'Young Serif', serif;
     background-color: #542e71;
     color: #fff;
     padding: 0px 4px 0px 4px;
-    font-family: 'Young Serif', serif;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+.language-current {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.language-dropdown {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.selected-language {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.language-list {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding-top: 1%;
+    margin-top: 20px;
+
+}
+
+.language-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-top:5px;
+    margin-top:5px;
+}
+
+.language-list-item label {
+    color: black;
+}
+
+.language-item-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .chatwith {

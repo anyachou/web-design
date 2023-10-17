@@ -5,8 +5,8 @@ html, body{
 }
 
 .nav-link{
-    color: #fff; 
-    text-decoration: none; 
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -97,8 +97,8 @@ html, body{
 
 /* Desktop:These rules are only applied if the screen is wider than 768px */
 @media only screen and (min-width: 768px) {
-    .flex-header-menu{ 
-        display: grid; 
+    .flex-header-menu{
+        display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         padding: 2vh 5vw;
@@ -130,7 +130,7 @@ html, body{
     .header-name a, .header-links a:hover{
         border-bottom: 1px solid;
     }
-    
+
     .flex-side-menu{
         display: none;  /*hide the side menu*/
     }
@@ -158,8 +158,8 @@ html, body{
 }
 /* Desktop: These rules are only applied if the screen is wider than 1194px */
 @media only screen and (min-width: 1195px){
-    .flex-header-menu{ 
-        display: grid; 
+    .flex-header-menu{
+        display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         padding: 2vh 5vw;
@@ -204,65 +204,65 @@ html, body{
         padding: 2vh 5vw;
         text-align: center;
     }
-    
+
     .footer-friend{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-friend span{
         font-size: larger;
     }
-    
+
     .footer-friend a{
         color: #fff;
         margin: 3px;
         text-decoration:none;
     }
-    
+
     .footer-friend a:hover{
         color: #ebd257;
     }
-    
+
     .footer-community{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-community span{
         font-size: larger;
         margin: 4px;
     }
-    
+
     .footer-community a{
         color: #fff;
         margin: 6px 0px;
         text-decoration:none;
     }
-    
+
     .footer-community a:hover{
         color: #ebd257;
     }
-    
+
     .footer-about{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-about span{
         font-size: larger;
         margin: 4px;
     }
-    
+
     .footer-about a{
         color: #fff;
         margin: 6px 0px;
         text-decoration:none;
     }
-    
+
     .footer-about a:hover{
         color: #ebd257;
-    }    
+    }
 
     .main-container-menu{
         width: 75vw;
@@ -298,13 +298,13 @@ html, body{
     .flex-container{
         flex-direction: row;
     }
-    
+
     .flex-header-menu{
         display: none; /*show the header*/
     }
-    
+
     .flex-side-menu{
-        display: grid;  
+        display: grid;
         background-color: #542e71;
         color: #fff;
         grid-auto-rows: min-content;
@@ -355,6 +355,59 @@ html, body{
     background-color: #542e71;
     color: #fff;
     padding: 0px 4px 0px 4px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+.language-current {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.language-dropdown {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.selected-language {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.language-list {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding-top: 1%;
+    margin-top: 20px;
+
+}
+
+.language-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-top:5px;
+    margin-top:5px;
+}
+
+.language-list-item label {
+    color: black;
+}
+
+.language-item-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .area{
@@ -473,7 +526,6 @@ select {
 .info-personal-detail-name {
     padding-right: 100px;
     font-size: 40px;
-    font: bold;
 }
 
 .info-personal-detail input {

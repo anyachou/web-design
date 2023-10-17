@@ -10,8 +10,60 @@
 	<script src="js/homepage.js"></script>
 </head>
 <body>
-	<iframe src="component/header.html" class="header"></iframe>
-	<div>
+	<div class="flex-container">
+    <header id="flex-header-menu" class="flex-header-menu header-menu" aria-label="Main menu">
+        <div class="header-name">
+            <img id="wwflogo" class="nav-link-logo"
+                 aria-label="LOGO" alt="HomePage"
+                 src="./images/country/earth-globe_995153.png">
+            <a href="find_friends.html" class="nav-link"
+               aria-label="Find Friends" tabindex="0">Find Friends</a>
+            <a href="newcommunity.html" class="nav-link" aria-label="Community"
+               tabindex="0">Community</a>
+        </div>
+        <div class="header-links">
+            <div class="language-dropdown">
+                <div id="language-current" class="language-current" aria-label="language-current">
+                    <img src="/" id="language-current-image" class="language-item-image" alt=""/>
+                    <label id="language-current-label" class=""></label>
+                </div>
+                <div id="language-list" class="language-list">
+                    <div id="language-list-item-en" class="language-list-item">
+                        <img
+                                src="./images/country/united-states-america_323310.png"
+                                class="language-item-image" aria-label="English"
+                                alt="English" id="language-list-item-image-en"/>
+                        <label id="language-list-item-label-en">EN</label>
+                    </div>
+                    <div id="language-list-item-ar" class="language-list-item">
+                        <img
+                                src="./images/country/united-arab-emirates_323301.png"
+                                class="language-item-image" aria-label="Arabic"
+                                alt="Arabic" id="language-list-item-image-ar"/>
+                        <label  id="language-list-item-label-ar">AR</label>
+                    </div>
+                    <div id="language-list-item-jp" class="language-list-item">
+                        <img src="./images/country/japan_323308.png"
+                             class="language-item-image"
+                             aria-label="Japanese" alt="Japanese"
+                             id="language-list-item-image-jp"/>
+                        <label id="language-list-item-label-jp">JP</label>
+                    </div>
+                    <div id="language-list-item-tw" class="language-list-item">
+                        <img
+                                src="./images/country/taiwan_5922010.png"
+                                class="language-item-image"
+                                aria-label="Taiwanese" alt="Taiwan"
+                                id="language-list-item-image-tw"/>
+                        <label  id="language-list-item-label-tw">TW</label>
+                    </div>
+                </div>
+                <a href="" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
+            </div>
+        </div>
+    </header>
+	<section class="flex-main-content main-content" aria-label="Main content">
+		<section class="centered-content">
 		<div class="chatwith">
 			<h1>
 				Chat with wwf
@@ -64,6 +116,7 @@
 				</div>
 			</div>
 		</div>
+		</section>
 		<div class="container-1">
 			<div class="community-enter-row-1">
 				<div class="community-enter-info-1">
@@ -98,27 +151,30 @@
 				</div>
 			</div>
 		</div>
+		</div>
 		<footer class="flex-footer-menu footer-menu" aria-label="Main menu">
             <div class="footer-friend">
                 <span>Friend Zone</span>
-                    <a href="find_friends.html" aria-label="London" tab-index="0">London</a>
-                    <a href="find_friends.html" aria-label="Toronto" tab-index="0">Toronto</a>
-                    <a href="find_friends.html" aria-label="Hamberg" tab-index="0">Hamberg</a>
-                    <a href="find_friends.html" aria-label="Brisbane" tab-index="0">Brisbane</a>
-                    <a href="find_friends.html" aria-label="Sydney" tab-index="0">Sydney</a>
+                    <a href="find_friends.html" aria-label="London" tabindex="0">London</a>
+                    <a href="find_friends.html" aria-label="Toronto" tabindex="0">Toronto</a>
+                    <a href="find_friends.html" aria-label="Hamberg" tabindex="0">Hamberg</a>
+                    <a href="find_friends.html" aria-label="Brisbane" tabindex="0">Brisbane</a>
+                    <a href="find_friends.html" aria-label="Sydney" tabindex="0">Sydney</a>
             </div>
             <div class="footer-community">
                 <span>Community</span>
-                    <a href="new-community.html" aria-label="my community" tab-index="0">My Comunity</a>
-                    <a href="new-community.html" aria-label="hot topics" tab-index="0">Hot Topics</a>
-                    <a href="new-community.html" aria-label="all topics" tab-index="0">All Topics</a>
+                    <a href="newcommunity.html" aria-label="my community" tabindex="0">My Comunity</a>
+                    <a href="newcommunity.html" aria-label="hot topics" tabindex="0">Hot Topics</a>
+                    <a href="newcommunity.html" aria-label="all topics" tabindex="0">All Topics</a>
             </div>
             <div class="footer-about">
                 <span>About</span>
-                    <a href="new-community.html" aria-label="my community" tab-index="0">Contact Us</a>
-                    <a href="new-community.html" aria-label="hot topics" tab-index="0">About Us</a>
-                    <a href="new-community.html" aria-label="all topics" tab-index="0">FAQ</a>
+        			<a href="contact_us.html" aria-label="Contact
+            Us" tabindex="0">Contact
+            Us</a>
+        			<a aria-label="hot topics" tabindex="0">About
+            Us</a>
+        			<a aria-label="all topics"
+           tabindex="0">FAQ</a>
             </div>
     	</footer>
-	</div>
-</body>

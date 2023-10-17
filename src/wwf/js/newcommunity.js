@@ -79,10 +79,6 @@ $(document).ready(function () {
 
     updateAriaAttribute();
 
-    // $('#wwflogo').click(function(){
-    //     window.location.href = '../homepage.html';
-    // });
-
 });
 
 //
