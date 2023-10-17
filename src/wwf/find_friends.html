@@ -1,209 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Find Friends</title>
-	<link rel="stylesheet" href="css/general_style.css">
-	<link rel="stylesheet" href="css/find_friends.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Find Friends</title>
+    <link rel="stylesheet" href="css/general_style.css">
+    <link rel="stylesheet" href="css/find_friends.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lilita+One&family=Pacifico&family=Young+Serif&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="./js/friends.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lilita+One&family=Pacifico&family=Young+Serif&display=swap"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/friends.js"></script>
 </head>
 <div class="flex-container">
-	<header id="flex-header-menu" class="flex-header-menu header-menu" aria-label="Main menu">
-		<div class="header-name">
-			<img id="wwflogo" class="nav-link-logo"
-				 aria-label="LOGO" alt="HomePage"
-				 src="./images/country/earth-globe_995153.png">
-			<a href="find_friends.html" class="nav-link"
-			   aria-label="Find Friends" tabindex="0">Find Friends</a>
-			<a href="newcommunity.html" class="nav-link" aria-label="Community"
-			   tabindex="0">Community</a>
-		</div>
-		<div class="header-links">
-			<div class="language-dropdown">
-				<div id="language-current" class="language-current" aria-label="language-current">
-					<img src="/" id="language-current-image" class="language-item-image" alt=""/>
-					<label id="language-current-label" class=""></label>
-				</div>
-				<div id="language-list" class="language-list">
-					<div id="language-list-item-en" class="language-list-item">
-						<img
-								src="./images/country/united-states-america_323310.png"
-								class="language-item-image" aria-label="English"
-								alt="English" id="language-list-item-image-en"/>
-						<label id="language-list-item-label-en">EN</label>
-					</div>
-					<div id="language-list-item-ar" class="language-list-item">
-						<img
-								src="./images/country/united-arab-emirates_323301.png"
-								class="language-item-image" aria-label="Arabic"
-								alt="Arabic" id="language-list-item-image-ar"/>
-						<label  id="language-list-item-label-ar">AR</label>
-					</div>
-					<div id="language-list-item-jp" class="language-list-item">
-						<img src="./images/country/japan_323308.png"
-							 class="language-item-image"
-							 aria-label="Japanese" alt="Japanese"
-							 id="language-list-item-image-jp"/>
-						<label id="language-list-item-label-jp">JP</label>
-					</div>
-					<div id="language-list-item-tw" class="language-list-item">
-						<img
-								src="./images/country/taiwan_5922010.png"
-								class="language-item-image"
-								aria-label="Taiwanese" alt="Taiwan"
-								id="language-list-item-image-tw"/>
-						<label  id="language-list-item-label-tw">TW</label>
-					</div>
-				</div>
-				<a href="login.html" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
-			</div>
-		</div>
-	</header>
-	<aside id="flex-side-menu" class="flex-side-menu side-menu" aria-label="Main menu">
-		<img href="homepage.html" class="nav-link-logo" aria-label="LOGO"
-			 alt="HomePage" src="./images/country/earth-globe_995153.png">
-		<a href="find_friends.html" class="nav-link" aria-label="Find Friends"
-		   aria-current="Friends">
-			<span>Friend Zone</span>
-		</a>
-		<a href="newcommunity.html" class="nav-link" aria-label="Community"
-		   aria-current="Community">
-			<span>Community</span>
-		</a>
-		<a href="" class="nav-link" aria-label="About" aria-current="About">
-			<span>About</span>
-		</a>
-	</aside>
-	<section class="flex-main-content main-content" aria-label="Main content">
-		<div class="centered-content">
-			<div class="banner"></div>
-			<div class="text-content">
-				<h2>Find friend zone in your location!</h2>
-			</div>
-		</div>
-		<div class="dropmenu_grid">
-			<div class="selector">
-				<div class="lang-menu">
-					<label>
-						<select>
-							<span>Language</span>
-							<option>English</option>
-							<option>Arabic</option>
-							<option>German</option>
-							<option>Japanese</option>
-							<option>Mandarin</option>
-						</select>
-					</label>
-				</div>
-				<div class="loc-menu">
-					<label>
-						<select>
-							<span>Location</span>
-							<option>London</option>
-							<option>Toronto</option>
-							<option>Hamberg</option>
-							<option>Brisbane</option>
-							<option>Sydney</option>
-						</select>
-					</label>
-				</div>
-			</div>
-		</div>
-		<div id="infos-grid">
-			<div class="info-grid">
-				<div class="info-personal info-detail-col">
-					<img src="images/icon/man.png" alt="icon" class="info-personal-image"/>
-					<div class="info-personal-lang">
-						<label>SPEAKS</label>
-						<div class="info-personal-lang-detail">
-							<div class="info-personal-lang-country">
-								<img src="images/country/united-states-america_323310.png" alt="English" class="info-personal-lang-country-image" />
-								<label>English</label>
-							</div>
-							<div class="info-personal-lang-country">
-								<img src="images/country/japan_323308.png" alt="Japanese" class="info-personal-lang-country-image" />
-								<label>Japanese</label>
-							</div>
-						</div>
-					</div>
-					<div class="info-personal-lang">
-						<label>LEARNS</label>
-						<div class="info-personal-lang-detail">
-							<div class="info-personal-lang-country">
-								<img src="images/country/united-states-america_323310.png" alt="English" class="info-personal-lang-country-image" />
-								<label>English</label>
-							</div>
-							<div class="info-personal-lang-country">
-								<img src="images/country/taiwan_5922010.png" alt="Taiwan" class="info-personal-lang-country-image" />
-								<label>Taiwanese</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="info-personal-detail info-detail-col">
-					<div class="info-personal-detail-name-and-location">
-						<label class="info-personal-detail-name">Jason</label>
-						<img src="images/icon/pin_484167.png" alt="icon" class="icon"/>
-						<label>Brisbane</label>
-					</div>
-					<h4>Communities</h4>
-					<div class="info-personal-detail-community">
-						<img src="./images/community/Wine.jpg" alt="wine" class="community-image"/>
-						<img src="./images/community/tennis.jpg" alt="tennis" class="community-image"/>
-						<img src="./images/community/baking.webp" alt="baking" class="community-image"/>
-					</div>
-					<h5>My language partner is</h5>
-					<label>
-						<input type="text" class="info-personal-detail-lang-partner" />
-					</label>
-					<h5>My learn goal is</h5>
-					<label>
-						<input type="text" class="info-personal-detail-learn-goal" />
-					</label>
-				</div>
-				<div class="info-personal-chat info-detail-col">
-					<img src="images/icon/chat_589708.png" alt="Chat" class="extra-icon">
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer id="flex-footer-menu" class="flex-footer-menu footer-menu" aria-label="Main menu">
-		<div class="footer-friend">
-			<span><a href="find_friends.html" aria-label="friendzone" tabindex="0">Friend Zone</a></span>
-			<a href="find_friends.html" aria-label="London" tabindex="0">London</a>
-			<a href="find_friends.html" aria-label="Toronto"
-			   tabindex="0">Toronto</a>
-			<a href="find_friends.html" aria-label="Hamberg"
-			   tabindex="0">Hamberg</a>
-			<a href="find_friends.html" aria-label="Brisbane"
-			   tabindex="0">Brisbane</a>
-			<a href="find_friends.html" aria-label="Sydney" tabindex="0">Sydney</a>
-		</div>
-		<div class="footer-community">
-			<span><a href="newcommunity.html" aria-label="community" tabindex="0">Community</a></span>
-			<a href="newcommunity.html" aria-label="my community" tabindex="0">My
-				Comunity</a>
-			<a href="newcommunity.html" aria-label="hot topics" tabindex="0">Hot
-				Topics</a>
-			<a href="newcommunity.html" aria-label="all topics" tabindex="0">All
-				Topics</a>
-		</div>
-		<div class="footer-about">
+    <header id="flex-header-menu" class="flex-header-menu header-menu"
+            aria-label="Main menu">
+        <div class="header-name">
+            <img id="wwflogo" class="nav-link-logo"
+                 aria-label="LOGO" alt="HomePage"
+                 src="./images/country/earth-globe_995153.png">
+            <a href="find_friends.html" class="nav-link"
+               aria-label="Find Friends" tabindex="0">Find Friends</a>
+            <a href="newcommunity.html" class="nav-link" aria-label="Community"
+               tabindex="0">Community</a>
+        </div>
+        <div class="header-links">
+            <div class="language-dropdown">
+                <div id="language-current" class="language-current"
+                     aria-label="language-current">
+                    <img src="/" id="language-current-image"
+                         class="language-item-image" alt=""/>
+                    <label id="language-current-label" class=""></label>
+                </div>
+                <div id="language-list" class="language-list">
+                    <div id="language-list-item-en" class="language-list-item">
+                        <img
+                                src="./images/country/united-states-america_323310.png"
+                                class="language-item-image" aria-label="English"
+                                alt="English" id="language-list-item-image-en"/>
+                        <label id="language-list-item-label-en">EN</label>
+                    </div>
+                    <div id="language-list-item-ar" class="language-list-item">
+                        <img
+                                src="./images/country/united-arab-emirates_323301.png"
+                                class="language-item-image" aria-label="Arabic"
+                                alt="Arabic" id="language-list-item-image-ar"/>
+                        <label id="language-list-item-label-ar">AR</label>
+                    </div>
+                    <div id="language-list-item-jp" class="language-list-item">
+                        <img src="./images/country/japan_323308.png"
+                             class="language-item-image"
+                             aria-label="Japanese" alt="Japanese"
+                             id="language-list-item-image-jp"/>
+                        <label id="language-list-item-label-jp">JP</label>
+                    </div>
+                    <div id="language-list-item-tw" class="language-list-item">
+                        <img
+                                src="./images/country/taiwan_5922010.png"
+                                class="language-item-image"
+                                aria-label="Taiwanese" alt="Taiwan"
+                                id="language-list-item-image-tw"/>
+                        <label id="language-list-item-label-tw">TW</label>
+                    </div>
+                </div>
+                <a href="login.html" class="nav-link" aria-label="LogIn"
+                   tab-index="0">LogIn</a>
+            </div>
+        </div>
+    </header>
+    <aside id="flex-side-menu" class="flex-side-menu side-menu"
+           aria-label="Main menu">
+        <img href="homepage.html" class="nav-link-logo" aria-label="LOGO"
+             alt="HomePage" src="./images/country/earth-globe_995153.png">
+        <a href="find_friends.html" class="nav-link" aria-label="Find Friends"
+           aria-current="Friends">
+            <span>Friend Zone</span>
+        </a>
+        <a href="newcommunity.html" class="nav-link" aria-label="Community"
+           aria-current="Community">
+            <span>Community</span>
+        </a>
+        <a href="" class="nav-link" aria-label="About" aria-current="About">
+            <span>About</span>
+        </a>
+    </aside>
+    <section class="flex-main-content main-content" aria-label="Main content">
+        <div class="centered-content">
+            <div class="banner"></div>
+            <div class="text-content">
+                <h2>Find friend zone in your location!</h2>
+            </div>
+        </div>
+        <div class="dropmenu_grid">
+            <div class="selector">
+                <div class="lang-menu">
+                    <label>
+                        <select>
+                            <span>Language</span>
+                            <option>English</option>
+                            <option>Arabic</option>
+                            <option>German</option>
+                            <option>Japanese</option>
+                            <option>Mandarin</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="loc-menu">
+                    <label>
+                        <select>
+                            <span>Location</span>
+                            <option>London</option>
+                            <option>Toronto</option>
+                            <option>Hamberg</option>
+                            <option>Brisbane</option>
+                            <option>Sydney</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="col-12 col-md-12 col-lg-6" style="background-color:
+			yellow">
+                <div class="grid-row">
+                    <div class="col-4 col-md-12 col-lg-4">
+                        <img class="photo" src="./images/icon/man.png"
+                             alt="photo" aria-label="photo">
+                        <div class="info-personal-lang">
+                            <label>SPEAKS</label>
+                            <div class="info-personal-lang-detail">
+                                <div class="info-personal-lang-country">
+                                    <img src="images/country/united-states-america_323310.png"
+                                         alt="English"
+                                         class="info-personal-lang-country-image"/>
+                                    <label>English</label>
+                                </div>
+                                <div class="info-personal-lang-country">
+                                    <img src="images/country/japan_323308.png"
+                                         alt="Japanese"
+                                         class="info-personal-lang-country-image"/>
+                                    <label>Japanese</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-personal-lang">
+                            <label>LEARNS</label>
+                            <div class="info-personal-lang-detail">
+                                <div class="info-personal-lang-country">
+                                    <img src="images/country/united-states-america_323310.png"
+                                         alt="English"
+                                         class="info-personal-lang-country-image"/>
+                                    <label>English</label>
+                                </div>
+                                <div class="info-personal-lang-country">
+                                    <img src="images/country/taiwan_5922010.png"
+                                         alt="Taiwan"
+                                         class="info-personal-lang-country-image"/>
+                                    <label>Taiwanese</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-12 col-lg-4">
+                        <div class="info-personal-detail info-detail-col">
+                            <div class="info-personal-detail-name-and-location"></div>
+                            <label class="info-personal-detail-name">Jason</label>
+                            <img src="images/icon/pin_484167.png" alt="icon" class="icon"/>
+                            <label>Brisbane</label>
+                        </div>
+                        <h4>Communities</h4>
+                        <div class="info-personal-detail-community">
+                            <img src="./images/community/Wine.jpg" alt="wine" class="community-image"/>
+                            <img src="./images/community/tennis.jpg" alt="tennis" class="community-image"/>
+                            <img src="./images/community/baking.webp" alt="baking" class="community-image"/>
+                        </div>
+                        <h5>My language partner is</h5>
+                        <label>
+                            <input type="text" class="info-personal-detail-lang-partner" />
+                        </label>
+                        <h5>My learn goal is</h5>
+                        <label>
+                            <input type="text" class="info-personal-detail-learn-goal" />
+                        </label>
+                    </div>
+                    </div>
+                    <div class="col-4 col-md-12 col-lg-4">
+                        <img src="images/icon/chat_589708.png" alt="Chat" class="extra-icon">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer id="flex-footer-menu" class="flex-footer-menu footer-menu"
+            aria-label="Main menu">
+        <div class="footer-friend">
+            <span><a href="find_friends.html" aria-label="friendzone"
+                     tabindex="0">Friend Zone</a></span>
+            <a href="find_friends.html" aria-label="London"
+               tabindex="0">London</a>
+            <a href="find_friends.html" aria-label="Toronto"
+               tabindex="0">Toronto</a>
+            <a href="find_friends.html" aria-label="Hamberg"
+               tabindex="0">Hamberg</a>
+            <a href="find_friends.html" aria-label="Brisbane"
+               tabindex="0">Brisbane</a>
+            <a href="find_friends.html" aria-label="Sydney"
+               tabindex="0">Sydney</a>
+        </div>
+        <div class="footer-community">
+            <span><a href="newcommunity.html" aria-label="community"
+                     tabindex="0">Community</a></span>
+            <a href="newcommunity.html" aria-label="my community" tabindex="0">My
+                Comunity</a>
+            <a href="newcommunity.html" aria-label="hot topics" tabindex="0">Hot
+                Topics</a>
+            <a href="newcommunity.html" aria-label="all topics" tabindex="0">All
+                Topics</a>
+        </div>
+        <div class="footer-about">
 			<span><a href="contact_us.html" aria-label="Contact
 				Us" tabindex="0">About</a></span>
-			<a href="contact_us.html" aria-label="Contact
+            <a href="contact_us.html" aria-label="Contact
 				Us" tabindex="0">Contact
-				Us</a>
-			<a aria-label="hot topics" tabindex="0">About
-				Us</a>
-			<a aria-label="all topics"
-			   tabindex="0">FAQ</a>
-		</div>
-	</footer>
-</div>
+                Us</a>
+            <a aria-label="hot topics" tabindex="0">About
+                Us</a>
+            <a aria-label="all topics"
+               tabindex="0">FAQ</a>
+        </div>
+    </footer>
 </html>

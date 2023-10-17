@@ -1,30 +1,30 @@
 /* base styles */
-html, body{
+html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, 'Noto Sans' ,sans-serif;
+    font-family: Arial, Helvetica, 'Noto Sans', sans-serif;
 }
 
-.nav-link{
-    color: #fff; 
-    text-decoration: none; 
+.nav-link {
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
 }
 
 /* Mobile-first: These rules apply by default */
-.flex-header-menu{
-    display: none;  /*hide the header*/
+.flex-header-menu {
+    display: none; /*hide the header*/
 }
 
-.flex-side-menu{
-    display: none;  /*hide the side menu*/
+.flex-side-menu {
+    display: none; /*hide the side menu*/
 }
 
-.flex-footer-menu{
-    display: block;  /*show the footer*/
+.flex-footer-menu {
+    display: block; /*show the footer*/
 }
 
-.flex-footer-menu{
+.flex-footer-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -33,91 +33,127 @@ html, body{
     text-align: center;
 }
 
-.footer-friend{
+.footer-friend {
     display: flex;
     flex-direction: column;
 }
 
-.footer-friend span{
+.footer-friend span {
     font-size: larger;
 }
 
-.footer-friend a{
+.footer-friend a {
     display: none;
 }
 
-.footer-friend span:hover{
+.footer-friend span:hover {
     color: #ebd257;
 }
 
-.footer-community{
+.footer-community {
     display: flex;
     flex-direction: column;
 }
 
-.footer-community span{
-    font-size: larger;
-    margin: 4px;
-}
-
-.footer-community a{
-    display: none;
-}
-
-.footer-community span:hover{
-    color: #ebd257;
-}
-
-.footer-about{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-about span{
+.footer-community span {
     font-size: larger;
     margin: 4px;
 }
 
-.footer-about a{
+.footer-community a {
     display: none;
 }
 
-.footer-about span:hover{
+.footer-community span:hover {
     color: #ebd257;
 }
 
-.main-container{
-    width: 100vw;  /*set the width to full screen*/
+.footer-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-about span {
+    font-size: larger;
+    margin: 4px;
+}
+
+.footer-about a {
+    display: none;
+}
+
+.footer-about span:hover {
+    color: #ebd257;
+}
+
+.main-container {
+    width: 100vw; /*set the width to full screen*/
 }
 
 
 /* responsive grid for .main-content */
-.grid-row{
+.grid-row {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(10vh, auto);
     gap: 16px;
     margin: 2vh 2vw;
 
     /*width of items in our grid-row */
-    .col-1 { grid-column: span 1; }
-    .col-2 { grid-column: span 2; }
-    .col-3 { grid-column: span 3; }
-    .col-4 { grid-column: span 4; }
-    .col-5 { grid-column: span 5; }
-    .col-6 { grid-column: span 6; }
-    .col-7 { grid-column: span 7; }
-    .col-8 { grid-column: span 8; }
-    .col-9 { grid-column: span 9; }
-    .col-10 { grid-column: span 10; }
-    .col-11 { grid-column: span 11; }
-    .col-12 { grid-column: span 12; }
+
+    .col-1 {
+        grid-column: span 1;
+    }
+
+    .col-2 {
+        grid-column: span 2;
+    }
+
+    .col-3 {
+        grid-column: span 3;
+    }
+
+    .col-4 {
+        grid-column: span 4;
+    }
+
+    .col-5 {
+        grid-column: span 5;
+    }
+
+    .col-6 {
+        grid-column: span 6;
+    }
+
+    .col-7 {
+        grid-column: span 7;
+    }
+
+    .col-8 {
+        grid-column: span 8;
+    }
+
+    .col-9 {
+        grid-column: span 9;
+    }
+
+    .col-10 {
+        grid-column: span 10;
+    }
+
+    .col-11 {
+        grid-column: span 11;
+    }
+
+    .col-12 {
+        grid-column: span 12;
+    }
 }
 
 
 /* flexbox layout for overall page */
-.flex-container{
-    display:flex;
+.flex-container {
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -170,8 +206,8 @@ html, body{
 .language-list-item {
     display: grid;
     grid-template-columns: auto 1fr;
-    padding-top:5px;
-    margin-top:5px;
+    padding-top: 5px;
+    margin-top: 5px;
 }
 
 .language-list-item label {
@@ -184,9 +220,9 @@ html, body{
     margin-right: 10px;
 }
 
-.banner{
+.banner {
     width: 100vw;
-    height: 40vh; 
+    height: 40vh;
     background-image: url("https://www.gostudy.com.au/wp-content/uploads/2018/10/brisbane-header-2.jpg");
     margin-top: -10px;
     background-repeat: no-repeat;
@@ -196,16 +232,16 @@ html, body{
     background-position: center center;
 }
 
-.text-content{
+.text-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dropmenu_grid{
+.dropmenu_grid {
     padding-right: 20px;
     padding-left: 20px;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
     width: 70vw;
     height: 10vh;
@@ -214,14 +250,14 @@ html, body{
     align-items: center;
 }
 
-.selector{
+.selector {
     display: flex;
     justify-content: center;
     column-gap: 3rem;
     width: 30%;
 }
 
-.lang-menu{
+.lang-menu {
     width: 50%;
 }
 
@@ -233,10 +269,10 @@ select {
     padding: 5px;
 }
 
-#infos-grid {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 40px 0
+.photo {
+    width: 15vw;
+    height: auto;
+    border-radius: 30%;
 }
 
 .info-personal-lang {
@@ -252,16 +288,24 @@ select {
 
 .info-personal-lang-country {
     display: flex;
+    flex-direction: row;
     margin-right: 10px;
     padding-right: 10px;
 }
 
-.info-personal-lang-country-image {
-    width: 35px;
-    height: 35px;
-    border-radius: 30px;
-
+.info-personal-lang label {
+    margin-left: 13px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
+
+.info-personal-lang-country-image {
+    width: 3vw;
+    height: auto;
+    border-radius: 20%;
+}
+
 
 .info-personal-detail-name-and-location {
     display: flex;
@@ -272,18 +316,6 @@ select {
     display: flex;
     justify-content: space-evenly;
     padding: 0px 20px;
-}
-
-.info-grid {
-    display: flex;
-    width: 50%;
-    min-height: 300px;
-    border: 2px solid black;
-}
-
-.info-detail-col {
-    padding: 15px;
-    margin: 15px;
 }
 
 .info-personal-image {
@@ -321,13 +353,13 @@ select {
     .flex-container{
         flex-direction: row;
     }
-    
+
     .flex-header-menu{
         display: none; /*hide the header*/
     }
-    
+
     .flex-side-menu{
-        display: grid;  
+        display: grid;
         grid-auto-rows: min-content;
         justify-items: center;
         align-items: start;
@@ -363,7 +395,7 @@ select {
 
 /* Desktop:These rules are only applied if the screen is wider than 768px */
 @media only screen and (max-width: 600px) {
-    
+
 
     .header-name{
         display: grid;
@@ -385,13 +417,13 @@ select {
     .header-name a, .header-links a:hover{
         color: #ebd257;
     }
-    
-} 
+
+}
 
 /* Desktop: These rules are only applied if the screen is wider than 1194px */
 @media only screen and (min-width: 1195px){
-    .flex-header-menu{ 
-        display: grid; 
+    .flex-header-menu{
+        display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         /* padding: 2vh 5vw; */
@@ -412,7 +444,7 @@ select {
     .nav-link-logo{
         width: 50px;
         height: 50px;
-        margin: 15px 15px !important;
+        margin: 10px 15px;
     }
 
     .header-name a, .header-links a{
@@ -436,76 +468,71 @@ select {
         padding: 2vh 5vw;
         text-align: center;
     }
-    
+
     .footer-friend{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-friend span{
         font-size: larger;
     }
-    
+
     .footer-friend a{
         display: inline;
         color: #fff;
         margin: 3px;
         text-decoration:none;
     }
-    
+
     .footer-friend a:hover{
         color: #ebd257;
     }
-    
+
     .footer-community{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-community span{
         font-size: larger;
         margin: 4px;
     }
-    
+
     .footer-community a{
         display: inline;
         color: #fff;
         margin: 6px 0px;
         text-decoration:none;
     }
-    
+
     .footer-community a:hover{
         color: #ebd257;
     }
-    
+
     .footer-about{
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-about span{
         font-size: larger;
         margin: 4px;
     }
-    
+
     .footer-about a{
         display: inline;
         color: #fff;
         margin: 6px 0px;
         text-decoration:none;
     }
-    
+
     .footer-about a:hover{
         color: #ebd257;
-    }    
+    }
 
     .main-container-menu{
         width: 75vw;
-    }
-
-    .banner{
-        height: 50vh !important; 
-        background-position-y: -40vh !important;
     }
 
     .col-lg-1 { grid-column: span 1; }
