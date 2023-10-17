@@ -9,76 +9,76 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lilita+One&family=Pacifico&family=Young+Serif&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="./js/friends.js"></script>
 </head>
-<body>
 <div class="flex-container">
 	<header id="flex-header-menu" class="flex-header-menu header-menu" aria-label="Main menu">
-        <div class="header-name">
-            <img id="wwflogo" class="nav-link-logo"
-                 aria-label="LOGO" alt="HomePage"
-                 src="./images/country/earth-globe_995153.png">
-            <a href="find_friends.html" class="nav-link"
-               aria-label="Find Friends" tabindex="0">Find Friends</a>
-            <a href="newcommunity.html" class="nav-link" aria-label="Community"
-               tabindex="0">Community</a>
-        </div>
-        <div class="header-links">
-            <div class="language-dropdown">
-                <div id="language-current" class="language-current" aria-label="language-current">
-                    <img src="/" id="language-current-image" class="language-item-image" alt=""/>
-                    <label id="language-current-label" class=""></label>
-                </div>
-                <div id="language-list" class="language-list">
-                    <div id="language-list-item-en" class="language-list-item">
-                        <img
-                                src="./images/country/united-states-america_323310.png"
-                                class="language-item-image" aria-label="English"
-                                alt="English" id="language-list-item-image-en"/>
-                        <label id="language-list-item-label-en">EN</label>
-                    </div>
-                    <div id="language-list-item-ar" class="language-list-item">
-                        <img
-                                src="./images/country/united-arab-emirates_323301.png"
-                                class="language-item-image" aria-label="Arabic"
-                                alt="Arabic" id="language-list-item-image-ar"/>
-                        <label  id="language-list-item-label-ar">AR</label>
-                    </div>
-                    <div id="language-list-item-jp" class="language-list-item">
-                        <img src="./images/country/japan_323308.png"
-                             class="language-item-image"
-                             aria-label="Japanese" alt="Japanese"
-                             id="language-list-item-image-jp"/>
-                        <label id="language-list-item-label-jp">JP</label>
-                    </div>
-                    <div id="language-list-item-tw" class="language-list-item">
-                        <img
-                                src="./images/country/taiwan_5922010.png"
-                                class="language-item-image"
-                                aria-label="Taiwanese" alt="Taiwan"
-                                id="language-list-item-image-tw"/>
-                        <label  id="language-list-item-label-tw">TW</label>
-                    </div>
-                </div>
-                <a href="login.html" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
-            </div>
-        </div>
-    </header>
-    <aside id="flex-side-menu" class="flex-side-menu side-menu" aria-label="Main menu">
-        <img href="homepage.html" class="nav-link-logo" aria-label="LOGO"
-             alt="HomePage" src="./images/country/earth-globe_995153.png">
-        <a href="find_friends.html" class="nav-link" aria-label="Find Friends"
-           aria-current="Friends">
-            <span>Friend Zone</span>
-        </a>
-        <a href="newcommunity.html" class="nav-link" aria-label="Community"
-           aria-current="Community">
-            <span>Community</span>
-        </a>
-        <a href="" class="nav-link" aria-label="About" aria-current="About">
-            <span>About</span>
-        </a>
-    </aside>
+		<div class="header-name">
+			<img id="wwflogo" class="nav-link-logo"
+				 aria-label="LOGO" alt="HomePage"
+				 src="./images/country/earth-globe_995153.png">
+			<a href="find_friends.html" class="nav-link"
+			   aria-label="Find Friends" tabindex="0">Find Friends</a>
+			<a href="newcommunity.html" class="nav-link" aria-label="Community"
+			   tabindex="0">Community</a>
+		</div>
+		<div class="header-links">
+			<div class="language-dropdown">
+				<div id="language-current" class="language-current" aria-label="language-current">
+					<img src="/" id="language-current-image" class="language-item-image" alt=""/>
+					<label id="language-current-label" class=""></label>
+				</div>
+				<div id="language-list" class="language-list">
+					<div id="language-list-item-en" class="language-list-item">
+						<img
+								src="./images/country/united-states-america_323310.png"
+								class="language-item-image" aria-label="English"
+								alt="English" id="language-list-item-image-en"/>
+						<label id="language-list-item-label-en">EN</label>
+					</div>
+					<div id="language-list-item-ar" class="language-list-item">
+						<img
+								src="./images/country/united-arab-emirates_323301.png"
+								class="language-item-image" aria-label="Arabic"
+								alt="Arabic" id="language-list-item-image-ar"/>
+						<label  id="language-list-item-label-ar">AR</label>
+					</div>
+					<div id="language-list-item-jp" class="language-list-item">
+						<img src="./images/country/japan_323308.png"
+							 class="language-item-image"
+							 aria-label="Japanese" alt="Japanese"
+							 id="language-list-item-image-jp"/>
+						<label id="language-list-item-label-jp">JP</label>
+					</div>
+					<div id="language-list-item-tw" class="language-list-item">
+						<img
+								src="./images/country/taiwan_5922010.png"
+								class="language-item-image"
+								aria-label="Taiwanese" alt="Taiwan"
+								id="language-list-item-image-tw"/>
+						<label  id="language-list-item-label-tw">TW</label>
+					</div>
+				</div>
+				<a href="login.html" class="nav-link" aria-label="LogIn" tab-index="0">LogIn</a>
+			</div>
+		</div>
+	</header>
+	<aside id="flex-side-menu" class="flex-side-menu side-menu" aria-label="Main menu">
+		<img href="homepage.html" class="nav-link-logo" aria-label="LOGO"
+			 alt="HomePage" src="./images/country/earth-globe_995153.png">
+		<a href="find_friends.html" class="nav-link" aria-label="Find Friends"
+		   aria-current="Friends">
+			<span>Friend Zone</span>
+		</a>
+		<a href="newcommunity.html" class="nav-link" aria-label="Community"
+		   aria-current="Community">
+			<span>Community</span>
+		</a>
+		<a href="" class="nav-link" aria-label="About" aria-current="About">
+			<span>About</span>
+		</a>
+	</aside>
 	<section class="flex-main-content main-content" aria-label="Main content">
 		<div class="centered-content">
 			<div class="banner"></div>
@@ -155,7 +155,7 @@
 					<div class="info-personal-detail-community">
 						<img src="./images/community/Wine.jpg" alt="wine" class="community-image"/>
 						<img src="./images/community/tennis.jpg" alt="tennis" class="community-image"/>
-                        <img src="./images/community/baking.webp" alt="baking" class="community-image"/>
+						<img src="./images/community/baking.webp" alt="baking" class="community-image"/>
 					</div>
 					<h5>My language partner is</h5>
 					<label>
@@ -172,7 +172,6 @@
 			</div>
 		</div>
 	</section>
-</body>
 	<footer id="flex-footer-menu" class="flex-footer-menu footer-menu" aria-label="Main menu">
 		<div class="footer-friend">
 			<span><a href="find_friends.html" aria-label="friendzone" tabindex="0">Friend Zone</a></span>
@@ -206,4 +205,5 @@
 			   tabindex="0">FAQ</a>
 		</div>
 	</footer>
+</div>
 </html>
