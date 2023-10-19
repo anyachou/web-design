@@ -96,7 +96,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(10vh, auto);
-    gap: 16px;
+    gap: 6px;
     margin: 2vh 2vw;
 
     /*width of items in our grid-row */
@@ -222,12 +222,12 @@ html, body {
 
 .banner {
     width: 100vw;
-    height: 40vh;
+    height: 60vh;
     background-image: url("https://www.gostudy.com.au/wp-content/uploads/2018/10/brisbane-header-2.jpg");
-    margin-top: -10px;
+    margin-top: -5px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 10vh;
+    background-position-y: 5vh;
     background-size: cover;
     background-position: center center;
 }
@@ -310,12 +310,7 @@ select {
 .info-personal-detail-name-and-location {
     display: flex;
     width: 100px;
-}
-
-.info-personal-detail-community {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px 20px;
+    flex-direction: row;
 }
 
 .info-personal-image {
@@ -326,26 +321,27 @@ select {
 }
 
 .community-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .info-personal-chat {
     float: right;
 }
 
-.info-personal-detail {
-    width: 500px;
-}
-
 .info-personal-detail-name {
-    padding-right: 100px;
+    padding-right: 50px;
     font-size: 40px;
 }
 
-.info-personal-detail input {
-    width: 90%;
+.info-personal-detail-lang-partner, .info-personal-detail-learn-goal {
+    border-bottom: 2px solid #000000;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    width: 70%;
 }
 
 /*Tablet and phones in landscape*/
@@ -453,7 +449,8 @@ select {
     }
 
     .header-name a, .header-links a:hover{
-        border-bottom: 1px solid var(--lightgrey);
+        border-bottom: 1px solid;
+        border: none;
     }
 
     .flex-side-menu{
