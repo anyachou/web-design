@@ -356,6 +356,17 @@ select {
     margin: 2vh 1vw;
 }
 
+.info-personal-detail-name-and-location > a{
+    text-decoration: none;
+    color: black;
+}
+
+.info-personal-detail-name-and-location > a:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
 /*Tablet and phones in landscape*/
 @media only screen and (min-width: 601px) and (max-width: 1194px) {
     .flex-container{
