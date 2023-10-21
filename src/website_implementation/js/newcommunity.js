@@ -80,3 +80,110 @@ $(document).ready(function () {
     updateAriaAttribute();
 
 });
+
+
+// fetch api in Events 
+$(document).ready(function() {
+    // api setting
+    const baseURL = "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/";
+    const my_website_code = 'Pete123';
+    const queryParams = {
+        website_code: my_website_code,
+    };
+    const queryString = new URLSearchParams(queryParams).toString();
+    const urlWithParams = baseURL + "?" + queryString;
+    const requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    
+    $('#board-activity-grid').click(function() {
+        // reset post area
+        $('#posts-info-grid').empty();
+
+        // get info
+        fetch(urlWithParams, requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                // create a new post
+                $.each(data, function(index, event) {
+                    const postElement = `
+                        <div class="post-info">
+                            <p class="post-info-text">[${event.event_type}] ${event.name}</p>
+                            <img src="${event.photo}" alt="${event.name}" class="post-info-image"/>
+                            <div class="post-info-functional">
+                                <!-- button style -->
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/up.png" alt="like" class="post-info-functional-option-icon"/>
+                                    <span>Like</span>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/comment.png" alt="comment" class="post-info-functional-option-icon"/>
+                                    <span>Comment</span>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/send.png" alt="share" class="post-info-functional-option-icon"/>
+                                    <span>Share</span>
+                                </div>
+                            </div>
+                        </div>`;
+                    $('#posts-info-grid').append(postElement);
+                });
+            });
+    });
+});
+
+// fetch api in Search Bar
+$(document).ready(function() {
+    const baseURL = "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/";
+    const my_website_code = 'Pete123';
+    const queryParams = {
+        website_code: my_website_code,
+    };
+    const queryString = new URLSearchParams(queryParams).toString();
+    const urlWithParams = baseURL + "?" + queryString;
+    const requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    function fetchAndDisplayEvents() {
+        // reset post area
+        $('#posts-info-grid').empty();
+
+        // get info
+        fetch(urlWithParams, requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                // create a new post
+                $.each(data, function(index, event) {
+                    const postElement = `
+                        <div class="post-info">
+                            <p class="post-info-text">[${event.event_type}] ${event.name}</p>
+                            <img src="${event.photo}" alt="${event.name}" class="post-info-image"/>
+                            <div class="post-info-functional">
+                                <!-- 這裡你可以根據需要調整功能按鈕的內容 -->
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/up.png" alt="like" class="post-info-functional-option-icon"/>
+                                    <span>Like</span>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/comment.png" alt="comment" class="post-info-functional-option-icon"/>
+                                    <span>Comment</span>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/send.png" alt="share" class="post-info-functional-option-icon"/>
+                                    <span>Share</span>
+                                </div>
+                            </div>
+                        </div>`;
+                    $('#posts-info-grid').append(postElement);
+                });
+            });
+    }
+
+    // when users click icon, fetch api
+    $('.search-icon').click(fetchAndDisplayEvents);
+});
+
