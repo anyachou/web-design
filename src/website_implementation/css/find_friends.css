@@ -79,6 +79,8 @@ html, body {
     grid-auto-rows: minmax(10vh, auto);
     gap: 6px;
     margin: 2vh 2vw;
+    width: 60vw;
+    place-items: center;
 
     /*width of items in our grid-row */
 
@@ -159,6 +161,24 @@ html, body {
     justify-content: space-between;
 }
 
+.banner {
+    width: 100vw;
+    height: 60vh;
+    background-image: url("https://www.gostudy.com.au/wp-content/uploads/2018/10/brisbane-header-2.jpg");
+    margin-top: -5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 5vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .language-current {
     display: flex;
     justify-content: center;
@@ -203,24 +223,6 @@ html, body {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-}
-
-.banner {
-    width: 100vw;
-    height: 60vh;
-    background-image: url("https://www.gostudy.com.au/wp-content/uploads/2018/10/brisbane-header-2.jpg");
-    margin-top: -5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 5vh;
-    background-size: cover;
-    background-position: center center;
-}
-
-.text-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .dropmenu_grid {
@@ -298,8 +300,8 @@ select {
 
 .info-personal-detail-name-and-location {
     display: flex;
-    width: 100px;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .info-personal-location{
@@ -350,6 +352,7 @@ select {
 
 .extra-icon{
     margin: 0.5vh;
+    padding: 0 10vw;
 }
 
 .info-personal-detail-name-and-location > p{
