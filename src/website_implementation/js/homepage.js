@@ -80,3 +80,12 @@ $(document).ready(function () {
     updateAriaAttribute();
 
 });
+
+//redirect to different topics post
+$(document).ready(function() {
+    $(".community-enter-info-detail").click(function() {
+        var topic = $(this).data("topics"); // get data-topics 
+        window.location.href = "./newcommunity.html" + topic;
+    });
+});
+
