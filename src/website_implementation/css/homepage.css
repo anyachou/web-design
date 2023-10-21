@@ -44,6 +44,7 @@ html, body{
 .footer-community span,
 .footer-about span{
     font-size: larger;
+    font-weight: 600;
 }
 
 .footer-friend a,
@@ -104,7 +105,7 @@ html, body{
 
 .flex-header-menu, .flex-footer-menu, .flex-side-menu {
     flex-shrink: 0;
-    font-family: 'Young Serif', serif;
+    font-family: 'Noto Sans';
     background-color: #542e71;
     color: #fff;
     padding: 0px 2px 0px 2px;
