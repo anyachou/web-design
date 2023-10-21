@@ -33,57 +33,37 @@ html, body{
     text-align: center;
 }
 
-.footer-friend{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-friend span{
-    font-size: larger;
-}
-
-.footer-friend a{
-    display: none;
-}
-
-.footer-friend span:hover{
-    color: #ebd257;
-}
-
-.footer-community{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-community span{
-    font-size: larger;
-    margin: 4px;
-}
-
-.footer-community a{
-    display: none;
-}
-
-.footer-community span:hover{
-    color: #ebd257;
-}
-
+.footer-friend,
+.footer-community,
 .footer-about{
     display: flex;
     flex-direction: column;
 }
 
+.footer-friend span,
+.footer-community span,
 .footer-about span{
     font-size: larger;
-    margin: 4px;
 }
 
+.footer-friend a,
+.footer-community a,
 .footer-about a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-friend > a,
+.footer-community > a,
+.footer-about > a{
     display: none;
 }
 
+.footer-friend span:hover,
+.footer-community span:hover,
 .footer-about span:hover{
     color: #ebd257;
+    text-decoration: none;
 }
 
 .main-container{
@@ -184,20 +164,21 @@ html, body{
     margin-right: 10px;
 }
 
-.board-grid {
-    width: 150px;
-    height: 40px;
-}
 
 .board-grid {
     text-align: left;
     border: none;
     margin: 30px 5px;
     height: 50px;
+    width: 150px;
 }
 
-.hottopics{
-    left:130px;
+.board-grid-1 {
+    text-align: left;
+    border: none;
+    margin: 150px 5px;
+    height: 50px;
+    width: 150px;
 }
 
 .board-wineimg{

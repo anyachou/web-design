@@ -20,11 +20,11 @@ html, body {
     display: none; /*hide the side menu*/
 }
 
-.flex-footer-menu {
-    display: block; /*show the footer*/
+.flex-footer-menu{
+    display: block;  /*show the footer*/
 }
 
-.flex-footer-menu {
+.flex-footer-menu{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -33,57 +33,37 @@ html, body {
     text-align: center;
 }
 
-.footer-friend {
+.footer-friend,
+.footer-community,
+.footer-about{
     display: flex;
     flex-direction: column;
 }
 
-.footer-friend span {
+.footer-friend span,
+.footer-community span,
+.footer-about span{
     font-size: larger;
 }
 
-.footer-friend a {
+.footer-friend a,
+.footer-community a,
+.footer-about a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-friend > a,
+.footer-community > a,
+.footer-about > a{
     display: none;
 }
 
-.footer-friend span:hover {
+.footer-friend span:hover,
+.footer-community span:hover,
+.footer-about span:hover{
     color: #ebd257;
-}
-
-.footer-community {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-community span {
-    font-size: larger;
-    margin: 4px;
-}
-
-.footer-community a {
-    display: none;
-}
-
-.footer-community span:hover {
-    color: #ebd257;
-}
-
-.footer-about {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-about span {
-    font-size: larger;
-    margin: 4px;
-}
-
-.footer-about a {
-    display: none;
-}
-
-.footer-about span:hover {
-    color: #ebd257;
+    text-decoration: none;
 }
 
 .main-container {
