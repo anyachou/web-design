@@ -87,7 +87,7 @@
                         <div id="board-grid">
                             <div id="board-my-grid" class="board-grid">
                                 <h4>My Community</h4>
-                                <div class="board-grid-option">Wine</div>
+                                <div class="board-grid-option" data-topic="Wine">Wine</div>
                             </div>
                             <div id="board-hot-grid" class="board-grid">
                                 <h4>Hot Topics</h4>
@@ -96,25 +96,25 @@
                                         <img class="board-wineimg"
                                             src="./images/icon/glass-with-wine_65667.png"
                                             alt="wine">
-                                        <div class="board-grid-option">Wine</div>
+                                        <div class="board-grid-option" data-topic="Wine">Wine</div>
                                     </div>
                                     <div class="board-game">
                                         <img class="board-gameimg"
                                             src="./images/icon/game-controller_9482080.png"
                                             alt="game">
-                                        <div class="board-grid-option">Game</div>
+                                        <div class="board-grid-option" data-topic="Game">Game</div>
                                     </div>
                                     <div class="board-baking">
                                         <img class="board-bakeimg"
                                             src="./images/icon/baking_1973791.png"
                                             alt="baking">
-                                        <div class="board-grid-option">Baking</div>
+                                        <div class="board-grid-option" data-topic="Baking">Baking</div>
                                     </div>
                                     <div class="board-tennis">
                                         <img class="board-tennisimg"
                                             src="./images/icon/tennis_5023365.png"
                                             alt="tennis">
-                                        <div class="board-grid-option">Tennis</div>
+                                        <div class="board-grid-option" data-topic="Tennis">Tennis</div>
                                     </div>
                                 </div>
                             </div>
@@ -129,16 +129,15 @@
                 <div id="posts-grid">
                     <div id="search-input-grid">
                         <div class="searchbox">
-                            <input type="text" placeholder="Search">
+                            <input type="text" id="search-bar" placeholder="Search">
                             <span class="search-icon"></span>
                             <img class="search-icon"
                                  src="./images/icon/search.png" alt="search">
                         </div>
                     </div>
                     <div id="posts-info-grid">
-                        <div class="post-info">
-                            <p class="post-info-text">[Game] I got a suspension
-                                on xbox because of this I was talking about
+                        <div class="post-info" data-topic="Game">
+                            <p class="post-info-text">[Game] I got a suspension on xbox because of this I was talking about
                                 game.</p>
                             <img src="images/community/video-game.jpg"
                                  alt="gamepost" class="post-info-image"/>
@@ -163,11 +162,59 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="post-info">
-                            <p class="post-info-text">[Game] I got a suspension
-                                on xbox because of this I was talking about
-                                game.</p>
-                            <img src="images/community/video-game.jpg"
+                        <div class="post-info" data-topic="Wine">
+                            <p class="post-info-text">[Wine] Have you tried the new Cabernet from Napa Valley?</p>
+                            <img src="images/community/Wine.jpg"
+                                 alt="gamepost" class="post-info-image"/>
+                            <div class="post-info-functional">
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/up.png" alt="like"
+                                         class="post-info-functional-option-icon"/>
+                                    <span>1.2k</span>
+                                    <img src="images/icon/down.png" alt="unlike"
+                                         class="post-info-functional-option-icon"/>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/comment.png"
+                                         alt="comment"
+                                         class="post-info-functional-option-icon"/>
+                                    <span>34</span>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/send.png" alt="share"
+                                         class="post-info-functional-option-icon"/>
+                                    <span>Share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-info" data-topic="Baking">
+                            <p class="post-info-text">[Baking] Tried making sourdough bread for the first time, and it flopped. Help!</p>
+                            <img src="images/community/baking.webp"
+                                 alt="gamepost" class="post-info-image"/>
+                            <div class="post-info-functional">
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/up.png" alt="like"
+                                         class="post-info-functional-option-icon"/>
+                                    <span>1.2k</span>
+                                    <img src="images/icon/down.png" alt="unlike"
+                                         class="post-info-functional-option-icon"/>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/comment.png"
+                                         alt="comment"
+                                         class="post-info-functional-option-icon"/>
+                                    <span>34</span>
+                                </div>
+                                <div class="post-info-functional-option">
+                                    <img src="images/icon/send.png" alt="share"
+                                         class="post-info-functional-option-icon"/>
+                                    <span>Share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-info" data-topic="Tennis">
+                            <p class="post-info-text">[Tennis] Who do you think will be the next rising star in women's tennis?</p>
+                            <img src="images/community/tennis.jpg"
                                  alt="gamepost" class="post-info-image"/>
                             <div class="post-info-functional">
                                 <div class="post-info-functional-option">

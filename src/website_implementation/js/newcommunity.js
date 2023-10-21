@@ -187,3 +187,19 @@ $(document).ready(function() {
     $('.search-icon').click(fetchAndDisplayEvents);
 });
 
+
+// implement side bar buttons
+$(document).ready(function(){
+    $('.board-grid-option').on('click', function(){
+        // Get the topic of the clicked sidebar item
+        var topic = $(this).data('topic');
+
+        // Hide all posts
+        $('.post-info').hide();
+
+        // Show only the posts with the matching topic
+        $('.post-info[data-topic="'+ topic +'"]').show();
+    });
+});
+
+

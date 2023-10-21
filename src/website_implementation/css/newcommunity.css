@@ -186,6 +186,39 @@ html, body{
     width: 150px;
 }
 
+.board-wineimg, 
+.board-gameimg, 
+.board-bakeimg, 
+.board-tennisimg {
+    width: 20px;
+    height: 20px;
+    align-self: center; 
+}
+
+.hottopics > img {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin: 10px 0; 
+    cursor: pointer; 
+}
+
+.board-grid-option {
+    margin-left: 10px; 
+    padding: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.board-grid-option:hover {
+    background-color: black;
+    color: white;
+}
+
+.board-grid-1 > h4:hover{
+    background-color: black;
+    color: white;
+}
+
 .board-wineimg{
     width:20px;
     height:20px;
