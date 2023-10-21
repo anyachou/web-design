@@ -147,6 +147,10 @@ html, body {
     padding: 0px 2px 0px 2px;
 }
 
+.flex-header-menu {
+    font-weight: bold;
+}
+
 .header-links {
     display: flex;
     align-items: center;
