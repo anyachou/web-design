@@ -190,15 +190,32 @@ $(document).ready(function() {
 
 // implement side bar buttons
 $(document).ready(function(){
-    $('.board-grid-option').on('click', function(){
-        // Get the topic of the clicked sidebar item
-        var topic = $(this).data('topic');
-
-        // Hide all posts
+    const handleCommunityTopic = (topic) => {
+     // Hide all posts
         $('.post-info').hide();
 
-        // Show only the posts with the matching topic
+    // Show only the posts with the matching topic
         $('.post-info[data-topic="'+ topic +'"]').show();
+    };
+
+    // users click on homempage, then it shows the matching post of the topic
+    const local_topic = localStorage.getItem('data-topic');
+    if(local_topic !== null){
+        //reset original page
+        $('.board-grid-option').css('background-color', 'white');
+        //show the color when users clicked
+        $('.board-grid-option[data-topic="'+ local_topic +'"]').css('background-color', 'grey');
+        handleCommunityTopic(local_topic);
+        //ensure hompage can link to this page
+        localStorage.removeItem('data-topic');
+    }
+
+    $('.board-grid-option').on('click', function(){
+        // Get the topic of the clicked sidebar item
+        const topic = $(this).data('topic');
+        $('.board-grid-option').css('background-color', 'white');
+        $(this).css('background-color', 'grey');
+        handleCommunityTopic(topic);
     });
 });
 

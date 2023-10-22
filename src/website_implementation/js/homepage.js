@@ -84,8 +84,9 @@ $(document).ready(function () {
 //redirect to different topics post
 $(document).ready(function() {
     $(".community-enter-info-detail").click(function() {
-        var topic = $(this).data("topics"); // get data-topics 
-        window.location.href = "./newcommunity.html" + topic;
+        var topic = $(this).data("topic"); // get data-topics 
+        localStorage.setItem('data-topic', topic);
+        window.location.href = "./newcommunity.html";
     });
 });
 
