@@ -344,23 +344,6 @@ html, body{
     background-image: url(https://cdn-icons-png.flaticon.com/512/175/175283.png);
 }
 
-#posts-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* You can adjust this if needed */
-    grid-template-areas:
-        "search"
-        "posts";
-    gap: 16px;
-}
-
-#search-input-grid {
-    grid-area: search;
-}
-
-#posts-info-grid {
-    grid-area: posts;
-}
-
 
 
 /*Tablet and phones in landscape*/

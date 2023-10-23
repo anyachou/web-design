@@ -2,11 +2,12 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, 'Noto Sans' ,sans-serif;
 }
 
 .nav-link{
-    color: #fff;
-    text-decoration: none;
+    color: #fff; 
+    text-decoration: none; 
     font-weight: bold;
 }
 
@@ -32,243 +33,45 @@ html, body{
     text-align: center;
 }
 
-.footer-friend{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-friend span{
-    font-size: larger;
-}
-
-.footer-friend a{
-    color: #fff;
-    margin: 3px;
-    text-decoration:none;
-}
-
-.footer-friend a:hover{
-    color: #ebd257;
-}
-
-.footer-community{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-community span{
-    font-size: larger;
-    margin: 4px;
-}
-
-.footer-community a{
-    color: #fff;
-    margin: 6px 0px;
-    text-decoration:none;
-}
-
-.footer-community a:hover{
-    color: #ebd257;
-}
-
+.footer-friend,
+.footer-community,
 .footer-about{
     display: flex;
     flex-direction: column;
 }
 
+.footer-friend span,
+.footer-community span,
 .footer-about span{
     font-size: larger;
-    margin: 4px;
+    font-weight: 600;
 }
 
+.footer-friend a,
+.footer-community a,
 .footer-about a{
     color: #fff;
-    margin: 6px 0px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.footer-about a:hover{
+.footer-friend > a,
+.footer-community > a,
+.footer-about > a{
+    display: none;
+}
+
+.footer-friend span:hover,
+.footer-community span:hover,
+.footer-about span:hover{
     color: #ebd257;
+    text-decoration: none;
 }
 
 .main-container{
     width: 100vw;  /*set the width to full screen*/
 }
 
-/* Desktop:These rules are only applied if the screen is wider than 768px */
-@media only screen and (min-width: 768px) {
-    .flex-header-menu{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        padding: 2vh 5vw;
-    }
 
-    .header-name{
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        align-items: center;
-    }
-
-    .header-links{
-        display: grid;
-        grid-template-columns: auto;
-        justify-self:end;
-    }
-
-    .nav-link-logo{
-        width: 50px;
-        height: 50px;
-        margin: 10px 0px;
-    }
-
-    .header-name a, .header-links a{
-        padding: 0 10px;
-        white-space: nowrap; /*prevents spaces between words causing a link break */
-    }
-
-    .header-name a, .header-links a:hover{
-        border-bottom: 1px solid;
-    }
-
-    .flex-side-menu{
-        display: none;  /*hide the side menu*/
-    }
-
-    .flex-footer-menu{
-        display: none;  /*hide the footer*/
-    }
-
-    .main-container{
-        width: 75vw;
-    }
-
-    .col-lg-1 { grid-column: span 1; }
-    .col-lg-2 { grid-column: span 2; }
-    .col-lg-3 { grid-column: span 3; }
-    .col-lg-4 { grid-column: span 4; }
-    .col-lg-5 { grid-column: span 5; }
-    .col-lg-6 { grid-column: span 6; }
-    .col-lg-7 { grid-column: span 7; }
-    .col-lg-8 { grid-column: span 8; }
-    .col-lg-9 { grid-column: span 9; }
-    .col-lg-10 { grid-column: span 10; }
-    .col-lg-11 { grid-column: span 11; }
-    .col-lg-12 { grid-column: span 12; }
-}
-/* Desktop: These rules are only applied if the screen is wider than 1194px */
-@media only screen and (min-width: 1195px){
-    .flex-header-menu{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        padding: 2vh 5vw;
-    }
-
-    .header-name{
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        align-items: center;
-    }
-
-    .header-links{
-        display: grid;
-        grid-template-columns: auto;
-        justify-self:end;
-    }
-
-    .nav-link-logo{
-        width: 50px;
-        height: 50px;
-        margin: 10px 0px;
-    }
-
-    .header-name a, .header-links a{
-        padding: 0 10px;
-        white-space: nowrap; /*prevents spaces between words causing a link break */
-    }
-
-    .header-name a, .header-links a:hover{
-        border-bottom: 1px solid var(--lightgrey);
-    }
-
-    .flex-side-menu{
-        display: none;
-    }
-
-    .flex-footer-menu{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        align-items: center;
-        padding: 2vh 5vw;
-        text-align: center;
-    }
-
-    .footer-friend{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-friend span{
-        font-size: larger;
-    }
-
-    .footer-friend a{
-        color: #fff;
-        margin: 3px;
-        text-decoration:none;
-    }
-
-    .footer-friend a:hover{
-        color: #ebd257;
-    }
-
-    .footer-community{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-community span{
-        font-size: larger;
-        margin: 4px;
-    }
-
-    .footer-community a{
-        color: #fff;
-        margin: 6px 0px;
-        text-decoration:none;
-    }
-
-    .footer-community a:hover{
-        color: #ebd257;
-    }
-
-    .footer-about{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-about span{
-        font-size: larger;
-        margin: 4px;
-    }
-
-    .footer-about a{
-        color: #fff;
-        margin: 6px 0px;
-        text-decoration:none;
-    }
-
-    .footer-about a:hover{
-        color: #ebd257;
-    }
-
-    .main-container-menu{
-        width: 75vw;
-    }
-
-}
 /* responsive grid for .main-content */
 .grid-row{
     display: grid;
@@ -293,75 +96,31 @@ html, body{
 }
 
 
-/*Tablet and phones in landscape*/
-@media only screen and (min-width: 601px) and (max-width: 1194px) {
-    .flex-container{
-        flex-direction: row;
-    }
-
-    .flex-header-menu{
-        display: none; /*show the header*/
-    }
-
-    .flex-side-menu{
-        display: grid;
-        background-color: #542e71;
-        color: #fff;
-        grid-auto-rows: min-content;
-        justify-items: center;
-        align-items: start;
-        gap: 3vh;
-        text-align: center;
-    }
-
-    .flex-side-menu span{
-        display: block;
-    }
-
-    .flex-footer-menu{
-        display: none; /*hide the footer*/
-    }
-
-    .nav-link-logo{
-        width: 30px;
-        height: 30px;
-        margin: 5px 0px;
-    }
-
-    .col-md-1 { grid-column: span 1; }
-    .col-md-2 { grid-column: span 2; }
-    .col-md-3 { grid-column: span 3; }
-    .col-md-4 { grid-column: span 4; }
-    .col-md-5 { grid-column: span 5; }
-    .col-md-6 { grid-column: span 6; }
-    .col-md-7 { grid-column: span 7; }
-    .col-md-8 { grid-column: span 8; }
-    .col-md-9 { grid-column: span 9; }
-    .col-md-10 { grid-column: span 10; }
-    .ccol-md-11 { grid-column: span 11; }
-    .col-md-12 { grid-column: span 12; }
-}
-
 /* flexbox layout for overall page */
 .flex-container{
     display:flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 .flex-header-menu, .flex-footer-menu, .flex-side-menu {
     flex-shrink: 0;
-    font-family: 'Young Serif', serif;
+    font-family: 'Noto Sans';
     background-color: #542e71;
     color: #fff;
-    padding: 0px 4px 0px 4px;
+    padding: 0px 2px 0px 2px;
+}
+
+.flex-header-menu {
+    font-weight: bold;
 }
 
 .header-links {
     display: flex;
     align-items: center;
-    padding: 0px 10px;
-    margin: 10px;
+    padding: 0px 5px;
+    margin: 20px;
+    justify-content: space-between;
 }
 
 .language-current {
@@ -373,7 +132,7 @@ html, body{
 .language-dropdown {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin-right: 10px;
+    margin-right: -5px;
     justify-content: center;
 }
 
@@ -436,4 +195,206 @@ html, body{
 
 .pic {
     padding-bottom: 10px;
+}
+
+/*Tablet and phones in landscape*/
+@media only screen and (min-width: 601px) and (max-width: 1194px) {
+    .flex-container{
+        flex-direction: row;
+    }
+    
+    .flex-header-menu{
+        display: none; /*hide the header*/
+    }
+    
+    .flex-side-menu{
+        display: grid;  
+        grid-auto-rows: min-content;
+        justify-items: center;
+        align-items: start;
+        gap: 6vh;
+    }
+
+    .flex-side-menu span{
+        display: block;
+    }
+
+    .nav-link-logo {
+        width: 10vw;
+        height: auto;
+    }
+
+    .flex-footer-menu{
+        display: none; /*hide the footer*/
+    }
+
+    .col-md-1 { grid-column: span 1; }
+    .col-md-2 { grid-column: span 2; }
+    .col-md-3 { grid-column: span 3; }
+    .col-md-4 { grid-column: span 4; }
+    .col-md-5 { grid-column: span 5; }
+    .col-md-6 { grid-column: span 6; }
+    .col-md-7 { grid-column: span 7; }
+    .col-md-8 { grid-column: span 8; }
+    .col-md-9 { grid-column: span 9; }
+    .col-md-10 { grid-column: span 10; }
+    .ccol-md-11 { grid-column: span 11; }
+    .col-md-12 { grid-column: span 12; }
+}
+
+/* Desktop:These rules are only applied if the screen is wider than 768px */
+@media only screen and (max-width: 600px) {
+    
+
+    .header-name{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+    }
+
+    .header-links{
+        display: grid;
+        grid-template-columns: auto;
+        justify-self:end;
+    }
+
+    .header-name a, .header-links a{
+        padding: 0 20px;
+        white-space: nowrap; /*prevents spaces between words causing a link break*/
+    }
+
+    .header-name a, .header-links a:hover{
+        color: #ebd257;
+    }
+    
+} 
+
+/* Desktop: These rules are only applied if the screen is wider than 1194px */
+@media only screen and (min-width: 1195px){
+    .flex-header-menu{ 
+        display: grid; 
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        /* padding: 2vh 5vw; */
+    }
+
+    .header-name{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+    }
+
+    .header-links{
+        display: grid;
+        grid-template-columns: auto;
+        justify-self:end;
+    }
+
+    .nav-link-logo{
+        width: 50px;
+        height: 50px;
+        margin: 10px 15px;
+    }
+
+    .header-name a, .header-links a{
+        padding: 0 10px;
+        white-space: nowrap; /*prevents spaces between words causing a link break */
+    }
+
+    .header-name a, .header-links a:hover{
+        border-bottom: 1px solid var(--lightgrey);
+    }
+
+    .flex-side-menu{
+        display: none;
+    }
+
+    .flex-footer-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 2vh 5vw;
+        text-align: center;
+    }
+    
+    .footer-friend{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-friend span{
+        font-size: larger;
+    }
+    
+    .footer-friend a{
+        display: inline;
+        color: #fff;
+        margin: 3px;
+        text-decoration:none;
+    }
+    
+    .footer-friend a:hover{
+        color: #ebd257;
+    }
+    
+    .footer-community{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-community span{
+        font-size: larger;
+        margin: 4px;
+    }
+    
+    .footer-community a{
+        display: inline;
+        color: #fff;
+        margin: 6px 0px;
+        text-decoration:none;
+    }
+    
+    .footer-community a:hover{
+        color: #ebd257;
+    }
+    
+    .footer-about{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-about span{
+        font-size: larger;
+        margin: 4px;
+    }
+    
+    .footer-about a{
+        display: inline;
+        color: #fff;
+        margin: 6px 0px;
+        text-decoration:none;
+    }
+    
+    .footer-about a:hover{
+        color: #ebd257;
+    }    
+
+    .main-container-menu{
+        width: 75vw;
+    }
+
+    .col-lg-1 { grid-column: span 1; }
+    .col-lg-2 { grid-column: span 2; }
+    .col-lg-3 { grid-column: span 3; }
+    .col-lg-4 { grid-column: span 4; }
+    .col-lg-5 { grid-column: span 5; }
+    .col-lg-6 { grid-column: span 6; }
+    .col-lg-7 { grid-column: span 7; }
+    .col-lg-8 { grid-column: span 8; }
+    .col-lg-9 { grid-column: span 9; }
+    .col-lg-10 { grid-column: span 10; }
+    .col-lg-11 { grid-column: span 11; }
+    .col-lg-12 { grid-column: span 12; }
+
 }
